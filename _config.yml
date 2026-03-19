@@ -1,7 +1,8 @@
 title: Yunkyeong Kang
 logo: /assets/img/KAIST_startup.jpg
-description: Synthetic Biology Researcher
-description: M.S. student @Korea Institute of Science and Technology (KAIST)
+description: >
+  <strong style="font-size:1.1em;">M.S. student @ KAIST</strong><br>
+  <span style="color:gray;">Synthetic Biology Researcher</span>
 # description: M.S. student at KAIST, Graduate School of Engineering Department. Interested in bioinformatics and computational biology.
 show_downloads: true
 google_analytics:
