@@ -7,6 +7,7 @@ description: >
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-# cv: https://mojomojo52.github.io/assets/cv/cv_igkang.pdf 
+cv: https://tinykrex.github.io/assets/cv/cv_riveryk.pdf
+cv_kor: https://tinykrex.github.io/assets/cv/cv_riveryk_kor.pdf
 # gs: # google scholar address
 email: riveryk@kaist.ac.kr
