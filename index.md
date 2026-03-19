@@ -9,7 +9,7 @@ My research focus is on bioinformatics and computational biology. Specifically, 
 
 # Education
 - **Feb. 2025 -** Master of Science, Graduate School of Engineering Biology, KAIST
-- **March. 2016 - Feb.** Bachelor of Science, Biology, Sungkyunkwan University
+- **March. 2016 - Feb.** Bachelor of Science, Department of Biological Science, Sungkyunkwan University
 
 # Experience
 - **Feb. 2025 -** Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB
