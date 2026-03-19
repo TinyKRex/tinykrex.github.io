@@ -8,12 +8,12 @@ Hi, I'm a M.S student at KAIST, Graduate School of Engineering Biology advised b
 My research focus is on bioinformatics and computational biology. Specifically, I am interested in computational methods to analyze and interpret large-scale biological data, with a focus on metagenomics and enzyme function prediction.
 
 # Education
-- Master of Science, Graduate School of Engineering Biology, KAIST (Feb. 2025 -)
-- Bachelor of Science, Biology, Sungkyunkwan University (March. 2016 - Feb.)
+**Feb. 2025 -** Master of Science, Graduate School of Engineering Biology, KAIST
+**March. 2016 - Feb.** Bachelor of Science, Biology, Sungkyunkwan University
 
 # Experience
-- Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB (Feb. 2025 -)
-- Quality Assurance Staff (Quality System), Bio Plant, Hanmi Pharm (- Feb.2025)
+**Feb. 2025 -** Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB
+**- Feb.2025** Quality Assurance Staff (Quality System), Bio Plant, Hanmi Pharm
 
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
