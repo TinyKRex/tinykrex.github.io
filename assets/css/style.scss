@@ -2,3 +2,27 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+/* 제목 색 (About Me, Publications 등) */
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* 본문 텍스트 */
+body {
+  color: #444444;
+}
+
+/* 왼쪽 description (Synthetic Biology Researcher 포함) */
+header p {
+  color: #2e7d32;
+}
+
+/* 링크 색 */
+a {
+  color: #2a7ae2;
+}
+
+a:hover {
+  color: #1b5bbf;
+}
