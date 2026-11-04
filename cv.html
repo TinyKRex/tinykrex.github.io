@@ -56,16 +56,26 @@ permalink: /cv.html
   .back { max-width: 760px; margin: 0 auto 12px; font-size: 13px; }
   .back a { color: var(--accent); text-decoration: none; }
   @media print {
-    body { background: #fff; padding: 0; font-size: 10.5pt; }
+    /* Print/PDF only: the on-screen page keeps its original spacing. */
+    @page { margin: 11mm 12mm; }
+    body { background: #fff; padding: 0; font-size: 8.8pt; line-height: 1.35; }
     .page { box-shadow: none; padding: 0; max-width: none; }
     .back { display: none; }
-    h2 { margin-top: 18px; }
-    .entry { page-break-inside: avoid; }
+    h1 { font-size: 21px; }
+    h2 { font-size: 11px; margin: 11px 0 6px; padding-bottom: 3px; }
+    h3 { font-size: 12.5px; }
+    .meta, .contact { font-size: 9.5px; }
+    .title { font-size: 11px; }
+    p { margin: 0 0 4px; }
+    li { margin-bottom: 2px; }
+    ul { margin: 3px 0 0; }
+    .entry { margin-bottom: 9px; page-break-inside: avoid; }
+    .skills dt { margin-top: 4px; }
   }
 </style>
 </head>
 <body>
-<div class="back"><a href="./">&larr; back to site</a> &middot; <a href="./cv-kr.html">한국어 CV</a> &middot; print this page to save as PDF</div>
+<div class="back"><a href="./">&larr; back to site</a> &middot; <a href="./cv-kr.html">한국어 CV</a> &middot; <a href="/assets/cv/Yunkyeong_Kang_CV.pdf">download PDF</a></div>
 <div class="page">
 
   <h1>Yunkyeong Kang</h1>

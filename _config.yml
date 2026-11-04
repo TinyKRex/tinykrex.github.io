@@ -32,6 +32,9 @@ nav:
 # cv_kor points at the Korean printable page /cv-kr.html.
 cv: /cv.html
 cv_kor: /cv-kr.html
+# PDFs printed from the two CV pages; regenerate them whenever the pages change.
+cv_pdf: /assets/cv/Yunkyeong_Kang_CV.pdf
+cv_kor_pdf: /assets/cv/강윤경_이력서.pdf
 scholar:   # Google Scholar profile URL
 linkedin: https://www.linkedin.com/in/yunkyeong-kang-91b010409/
 email: riveryk@kaist.ac.kr
