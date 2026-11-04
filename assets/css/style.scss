@@ -17,6 +17,16 @@ h3 {
   margin-bottom: 12px;
 }
 
+/* Sidebar profile photo */
+header img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 0 16px;
+}
+
 /* Sidebar navigation */
 .site-nav {
   margin: 0 0 20px;
