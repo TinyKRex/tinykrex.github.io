@@ -1,0 +1,213 @@
+---
+layout: none
+permalink: /cv.html
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yunkyeong Kang — CV</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #d8d8d8;
+    --accent: #267cb9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: #f6f6f6;
+    margin: 0;
+    padding: 24px 16px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 48px 56px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12);
+  }
+  h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.5px; }
+  .title { color: var(--muted); margin: 0 0 2px; }
+  .contact { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 5px;
+    margin: 30px 0 14px;
+  }
+  h3 { font-size: 15px; margin: 0 0 2px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  .entry { margin-bottom: 18px; }
+  ul { margin: 6px 0 0; padding-left: 18px; }
+  li { margin-bottom: 4px; }
+  p { margin: 0 0 8px; }
+  .skills dt { font-weight: 700; margin-top: 8px; }
+  .skills dd { margin: 2px 0 0; }
+  .back { max-width: 760px; margin: 0 auto 12px; font-size: 13px; }
+  .back a { color: var(--accent); text-decoration: none; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 10.5pt; }
+    .page { box-shadow: none; padding: 0; max-width: none; }
+    .back { display: none; }
+    h2 { margin-top: 18px; }
+    .entry { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="back"><a href="./">&larr; back to site</a> &middot; print this page to save as PDF</div>
+<div class="page">
+
+  <h1>Yunkyeong Kang</h1>
+  <p class="title">M.S. Candidate, Graduate School of Engineering Biology, KAIST</p>
+  <p class="title">Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB</p>
+  <p class="contact">
+    Daejeon, Republic of Korea &middot;
+    <a href="mailto:riveryk@kaist.ac.kr">riveryk@kaist.ac.kr</a> &middot;
+    <a href="https://tinykrex.github.io">tinykrex.github.io</a> &middot;
+    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a>
+  </p>
+
+  <h2>Profile</h2>
+  <p>Bioengineering researcher combining protein language models with cell-free, biofoundry-scale
+  experimental validation. Nearly two years of GMP quality assurance experience at a pharmaceutical
+  biologics plant — regulatory inspections, deviation investigation, change control — now applied to
+  AI-driven enzyme discovery. Works on both sides of the dry&ndash;wet divide: builds the embedding
+  pipelines and runs the assays that test them. Business-level English (OPIc IH) with
+  regulatory-inspection interpreting experience.</p>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <h3>M.S. in Engineering Biology &mdash; KAIST, Graduate School of Engineering Biology</h3>
+    <p class="meta">Feb 2025 &ndash; Feb 2027 (expected) &middot; Advisor: Prof. Haseong Kim &middot; KAIST&ndash;KRIBB joint program</p>
+    <p>Thesis: <em>Iterative DBTL-Driven Discovery of Metagenomic Lipases by Coupling Protein Language
+    Model Embeddings with Cell-Free High-Throughput Validation</em></p>
+  </div>
+  <div class="entry">
+    <h3>B.S. in Biological Science &mdash; Sungkyunkwan University</h3>
+    <p class="meta">Mar 2016 &ndash; Feb 2023 &middot; Magna Cum Laude &middot; major GPA 4.31 / 4.5</p>
+    <p>Thesis: <em>Plant Breeding Techniques for Crop Improvement: Focusing on Genome Editing</em></p>
+  </div>
+
+  <h2>Research Experience</h2>
+  <div class="entry">
+    <h3>Graduate Researcher &mdash; Synthetic Biology and Bioengineering Research Center, KRIBB</h3>
+    <p class="meta">Feb 2025 &ndash; present, Daejeon &middot; KAIST&ndash;KRIBB joint graduate program</p>
+    <p>Building a closed Design&ndash;Build&ndash;Test&ndash;Learn platform for enzyme discovery from
+    metagenomes, in which protein language model embeddings select candidates and cell-free protein
+    synthesis on a biofoundry validates them.</p>
+    <ul>
+      <li>Embedded ~6.9M ORFs from 8 environmental metagenomes into a 1,024-dimensional vector
+      database; ranked by cosine similarity to the centroid of 97 curated lipases/esterases,
+      recovering 976 candidates including remote homologs that alignment-based screening misses.</li>
+      <li>Redesigned the validation workflow: tailing PCR with T7 promoter/terminator in primer
+      5&prime; tails cut library construction from four steps to two; in-house S30 extract from a
+      GroEL/GroES-overexpressing strain gave ~2.5&times; the yield of a commercial kit and detected
+      pNPO/pNPB/pNPP activity the kit could not.</li>
+      <li>Standardized a 96/384-well expression&ndash;dilution&ndash;assay process on an Echo 525
+      acoustic dispenser and automated liquid handlers; screened 823 ORFs &times; 3 substrates for
+      ~2,500 quantitative measurements. A robust Z-score criterion (MAD-based, Z &ge; 3 plus
+      positive-control comparison) replaced ad-hoc thresholds, yielding 43 hit candidates (5.2%),
+      7 of them broad-specificity.</li>
+      <li>Training an activity predictor on Round 1 data (frozen ESM-C 600M encoder, ~6M trainable
+      parameters); the 780 experimentally confirmed negatives define negative pairs for metric
+      learning, so the selection criterion itself updates each round.</li>
+      <li>Structural interpretation with ESMFold at scale, Foldseek fold-similarity search, and
+      FoldDisco analysis of discontinuous catalytic motifs (Ser&ndash;His&ndash;Asp triad, oxyanion hole).</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <h3>Undergraduate Researcher &mdash; Research Center for Plant Plasticity, Seoul National University</h3>
+    <p class="meta">Dec 2021 &ndash; Feb 2022</p>
+    <p>Temperature-dependent protein changes in <em>Arabidopsis</em>; yeast two-hybrid, insert cloning,
+    restriction digestion. Wrote a lab-specific protocol still used as training material.</p>
+  </div>
+  <div class="entry">
+    <h3>Undergraduate Researcher &mdash; Infection and Inflammatory Disease Lab, Sungkyunkwan University</h3>
+    <p class="meta">Sep 2021 &ndash; Dec 2021</p>
+    <p>Immune-cell changes in diet-induced obese C57BL/6 mice; cell culture, ELISA, western blot,
+    flox genotyping.</p>
+  </div>
+
+  <h2>Industry Experience</h2>
+  <div class="entry">
+    <h3>Quality Assurance, Biologics &mdash; Hanmi Pharmaceutical, Pyeongtaek Bio Plant</h3>
+    <p class="meta">Jun 2023 &ndash; Feb 2025 (1 yr 8 mo), full-time</p>
+    <ul>
+      <li>Supported regulatory agency inspections as English interpreter and scribe, including
+      supply-chain lines of questioning.</li>
+      <li>Investigated deviations and managed change control for biologics manufacturing.</li>
+      <li>Managed supplier and supply-chain quality documentation under GMP.</li>
+    </ul>
+  </div>
+
+  <h2>Publications &amp; Presentations</h2>
+  <div class="entry">
+    <p><strong>Global Representations in Overlooked Single-token Embeddings of Protein Language
+    Models.</strong> S. Heo, <strong>Y. Kang</strong>, G. Park, S.-G. Lee, D.-H. Lee, H. Kim.
+    Poster Q-12, 52nd Annual Meeting of the Korean Society for Microbiology and Biotechnology
+    (KMB 2025), Busan, Jun 2025.</p>
+    <p class="meta">Showed that a single-token embedding can represent whole-protein information,
+    improving bacterial essential-gene prediction by up to 17% over average pooling.</p>
+  </div>
+
+  <h2>Selected Projects</h2>
+  <div class="entry">
+    <h3>MetaForge &mdash; Deep Learning-Based Discovery of Moonlighting Enzymes</h3>
+    <p class="meta">IDEA-B Synthetic Biology Competition (MSIT / Korea Synthetic Biology Council),
+    Mar &ndash; Oct 2026 &middot; team of 6, candidate selection and validation design</p>
+    <p>Passed first-round review and was funded as a commissioned KRIBB project. Established the
+    rationale from literature and database review, narrowed 14 enzyme&ndash;substrate reactions to 7
+    validated pairs through pre-screening controls, then screened 380 metagenomic candidates &times;
+    7 substrates &times; 4 conditions (~10,000 conditions) in three days.</p>
+  </div>
+  <div class="entry">
+    <h3>MAKEAT &mdash; AI Diet-Tracking App</h3>
+    <p class="meta">K-Software Empowerment BootCamp (640 h), 2022&ndash;2023 &middot; Excellence Award, healthcare track</p>
+    <p>Team project; volunteered for the Android/Flutter development role in addition to database
+    management. Individual projects: oral medication image classifier, COVID-19 case data analysis.</p>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Computational</dt>
+    <dd>Python (PyTorch), R, Linux/GPU server workflows; protein language models (ESM-C, ESM-2) and
+    embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek,
+    FoldDisco; UMAP and contrastive representation learning; NGS/multi-omics analysis.</dd>
+    <dt>Experimental</dt>
+    <dd>Cell-free protein synthesis and S30 extract preparation; primer design, PCR, Gibson assembly,
+    transformation; enzyme activity assays (pNP substrates), SDS-PAGE; cell culture, ELISA, western
+    blot, yeast two-hybrid.</dd>
+    <dt>Automation &amp; instruments</dt>
+    <dd>Echo 525 acoustic dispenser, Zephyr G3 liquid handler, Trobot II automated PCR, 5400 Fragment
+    Analyzer, microplate readers (Victor Nivo, Tecan Spark).</dd>
+    <dt>Quality &amp; regulatory</dt>
+    <dd>GMP, deviation investigation, change control, regulatory inspection support, supplier quality
+    management.</dd>
+    <dt>Languages</dt>
+    <dd>Korean (native); English (OPIc IH 2026; elementary schooling in San Jose,
+    California; regulatory inspection interpreting experience).</dd>
+  </dl>
+
+  <h2>Awards &amp; Activities</h2>
+  <ul>
+    <li>Magna Cum Laude, Sungkyunkwan University (Feb 2023)</li>
+    <li>Academic Excellence Scholarship, highest tier, Sungkyunkwan University (2022)</li>
+    <li>Excellence Award, Healthcare Track, K-Software Empowerment BootCamp (Feb 2023)</li>
+    <li>KAIST Language Buddy Program, participant (Sep 2025 &ndash; Aug 2026) &mdash; all team coordination in English</li>
+    <li>WISET Junior Mentor, STEM career mentoring for high school students (2017)</li>
+  </ul>
+
+</div>
+</body>
+</html>

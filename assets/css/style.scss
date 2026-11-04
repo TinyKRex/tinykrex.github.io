@@ -7,3 +7,52 @@ h1, h2, h3, h4, h5, h6 {
     color:#267cb9;
     margin:0 0 20px;
   }
+
+h2 {
+  margin-top: 36px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Sidebar navigation */
+.site-nav {
+  margin: 0 0 20px;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin: 0 0 4px;
+}
+
+.site-nav a {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.site-nav li.current a {
+  color: #333;
+  border-bottom: 2px solid #267cb9;
+}
+
+/* Tables (project lists, timelines) */
+table {
+  font-size: 14px;
+}
+
+table th, table td {
+  padding: 6px 12px;
+}
+
+/* Blockquotes used for abstracts */
+blockquote {
+  font-style: normal;
+  color: #555;
+}

@@ -2,12 +2,33 @@ title: Yunkyeong Kang
 logo: /assets/img/KAIST_startup_cropped.jpeg
 description: >
   <strong style="font-size:1.1em;">Bioengineering Researcher</strong><br>
-  <span style="color:gray;">M.S. student @KAIST</span>
-# description: M.S. student at KAIST, Graduate School of Engineering Department. Interested in bioinformatics and computational biology.
+  <span style="color:gray;">M.S. student @KAIST &middot; @KRIBB</span>
+# Used by jekyll-seo-tag for search results and link previews (not shown in the sidebar)
+tagline: Protein language models meets cell-free enzyme screening.
+author: Yunkyeong Kang
+lang: en-US
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-cv: https://tinykrex.github.io/assets/cv/cv_riveryk.pdf
-cv_kor: https://tinykrex.github.io/assets/cv/cv_riveryk_kor.pdf
-# gs: # google scholar address
+
+# Sidebar navigation
+nav:
+  - title: About
+    url: /
+  - title: Research
+    url: /research.html
+  - title: Experience
+    url: /experience.html
+  - title: Publications
+    url: /publications.html
+  - title: Projects
+    url: /projects.html
+
+# Sidebar links. Leave a value blank to hide that link.
+# cv points at the printable page /cv.html (print to PDF from the browser).
+# cv_kor is blank because assets/cv/ is empty — add the PDF, then restore the URL.
+cv: /cv.html
+cv_kor:
+scholar:   # Google Scholar profile URL
+linkedin:  # LinkedIn profile URL — recommended for non-Korean recruiters
 email: riveryk@kaist.ac.kr
