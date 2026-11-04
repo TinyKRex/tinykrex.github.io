@@ -92,8 +92,8 @@ II automated PCR, 5400 Fragment Analyzer, microplate readers (Victor Nivo, Tecan
 investigation and root cause analysis; change control; supplier and supply-chain quality
 management; technical documentation in Korean and English.
 
-**Languages** — Korean (native); English (OPIc IH, 2026; elementary schooling in San Jose,
-California; regulatory inspection interpreting experience).
+**Languages** — Korean (native); English (OPIc IH, 2026; TOEIC 960, 2021 — certificate expired;
+elementary schooling in San Jose, California; regulatory inspection interpreting experience).
 
 ---
 
