@@ -42,8 +42,9 @@ the validation workflow before running the screen.
   through purification, quantification and Gibson assembly. A gradient PCR resolved the Tm gap
   between the forward and reverse anchors.
 - **Cell-free extract.** I prepared S30 extract in-house from a GroEL/GroES-overexpressing
-  strain. This removed the batch-to-batch variation of commercial kits and gave activity on
-  pNPO, pNPB and pNPP in the CalB positive control that the kit had not detected.
+  strain. This removed the batch-to-batch variation of commercial kits and gave roughly 2.5×
+  the expression yield by GFP comparison, along with activity on pNPO, pNPB and pNPP in the CalB
+  positive control that the kit had not detected.
 - **Automation.** An Echo 525 acoustic dispenser and automated liquid handlers standardized the
   96/384-well expression, dilution and assay steps, with an sfGFP expression control on every
   plate so that plate-to-plate variation in cell-free expression could be monitored.
@@ -81,9 +82,10 @@ moves.
 
 I generate predicted structures for the candidate set with ESMFold, which needs no MSA, and use
 Foldseek to check whether hits with low sequence identity nonetheless share the α/β-hydrolase
-fold. This is how remote homology recovered by embedding distance gets structural support, and
-it also supplies interpretable features — catalytic triad and oxyanion hole geometry — for the
-next round of selection.
+fold. FoldDisco then searches for the catalytic motif geometry itself: the Ser–His–Asp triad and
+the oxyanion hole, which sit far apart in sequence but close together in space. This is how
+remote homology recovered by embedding distance gets structural support, and it also supplies
+interpretable features for the next round of selection.
 
 ---
 

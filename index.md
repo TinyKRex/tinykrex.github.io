@@ -65,4 +65,5 @@ AI-derived evidence is generated and controlled.
 
 [riveryk@kaist.ac.kr](mailto:riveryk@kaist.ac.kr) ·
 [GitHub](https://github.com/TinyKRex) ·
+[LinkedIn](https://www.linkedin.com/in/yunkyeong-kang-91b010409/) ·
 [CV (English)](./cv.html) · [CV (한국어)](./cv-kr.html)

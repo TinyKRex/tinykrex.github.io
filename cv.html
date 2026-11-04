@@ -75,7 +75,8 @@ permalink: /cv.html
     Daejeon, Republic of Korea &middot;
     <a href="mailto:riveryk@kaist.ac.kr">riveryk@kaist.ac.kr</a> &middot;
     <a href="https://tinykrex.github.io">tinykrex.github.io</a> &middot;
-    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a>
+    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a> &middot;
+    <a href="https://www.linkedin.com/in/yunkyeong-kang-91b010409/">LinkedIn</a>
   </p>
 
   <h2>Profile</h2>
@@ -115,8 +116,9 @@ permalink: /cv.html
       for homology search to return.</li>
       <li>Standardized the validation workflow so that rounds are comparable: tailing PCR with T7
       promoter/terminator in the primer 5&prime; tails shortened library construction; in-house S30
-      extract from a GroEL/GroES-overexpressing strain removed batch-to-batch variation and detected
-      pNPO/pNPB/pNPP activity in the CalB control that a commercial kit had not.</li>
+      extract from a GroEL/GroES-overexpressing strain removed batch-to-batch variation, gave ~2.5&times;
+      the expression yield of a commercial kit by GFP comparison, and detected pNPO/pNPB/pNPP activity
+      in the CalB control that the kit had not.</li>
       <li>Screened 855 candidate ORFs from 9 libraries against 3 pNP substrates on a 96/384-well
       automated workflow (Echo 525 acoustic dispenser, automated liquid handlers). A robust Z-score
       criterion (Z &ge; 3 plus positive-control comparison) replaced ad-hoc thresholds and identified
@@ -124,8 +126,9 @@ permalink: /cv.html
       <li>Training an activity prediction model on the Round 1 measurements (frozen ESM-C encoder with
       trainable pooling and projection heads); the ORFs with no detected activity serve as
       experimentally demonstrated negatives, so the selection criterion itself is updated each round.</li>
-      <li>Structural interpretation of hits with ESMFold and Foldseek fold-similarity search,
-      including catalytic triad and oxyanion hole geometry.</li>
+      <li>Structural interpretation of hits with ESMFold and Foldseek fold-similarity search, plus
+      FoldDisco analysis of the discontinuous catalytic motif (Ser&ndash;His&ndash;Asp triad, oxyanion
+      hole).</li>
       <li>Digitized the lab notebook and built a reagent, instrument and sample database so that
       experimental records are consistent enough to be reused as data.</li>
     </ul>
@@ -187,7 +190,7 @@ permalink: /cv.html
   <dl class="skills">
     <dt>Computational</dt>
     <dd>Python (PyTorch), R, Linux/GPU server workflows; protein language models (ProtT5, ESM-C, ESM-2) and
-    embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek; UMAP and contrastive representation learning; NGS/multi-omics analysis.</dd>
+    embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek, FoldDisco; UMAP and contrastive representation learning; NGS/multi-omics analysis.</dd>
     <dt>Experimental</dt>
     <dd>Cell-free protein synthesis and S30 extract preparation; primer design, PCR, Gibson assembly,
     transformation; enzyme activity assays (pNP substrates), SDS-PAGE; cell culture, ELISA, western
