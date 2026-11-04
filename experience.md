@@ -78,7 +78,7 @@ Thesis: *Plant Breeding Techniques for Crop Improvement: Focusing on Genome Edit
 
 **Computational** — Python (PyTorch), R, Linux and GPU server workflows; protein language models
 (ProtT5, ESM-C, ESM-2) and embedding database construction (HDF5); ESMFold, AlphaFold3,
-RFdiffusion, LigandMPNN; Foldseek; UMAP, contrastive representation learning; NGS and
+RFdiffusion, LigandMPNN; Foldseek, FoldDisco; UMAP, contrastive representation learning; NGS and
 multi-omics analysis.
 
 **Experimental** — Cell-free protein synthesis and S30 extract preparation; primer design, PCR,

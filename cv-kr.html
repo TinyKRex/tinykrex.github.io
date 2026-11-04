@@ -78,7 +78,8 @@ permalink: /cv-kr.html
     대전광역시 &middot;
     <a href="mailto:riveryk@kaist.ac.kr">riveryk@kaist.ac.kr</a> &middot;
     <a href="https://tinykrex.github.io">tinykrex.github.io</a> &middot;
-    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a>
+    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a> &middot;
+    <a href="https://www.linkedin.com/in/yunkyeong-kang-91b010409/">LinkedIn</a>
   </p>
 
   <h2>소개</h2>
@@ -133,8 +134,9 @@ permalink: /cv-kr.html
       서열 상동성 검색으로는 회수되지 않는 원거리 서열이 후보에 포함됩니다.</li>
       <li>라운드 간 조건을 동일하게 맞추기 위해 검증 공정을 먼저 표준화했습니다. T7 promoter·terminator를
       프라이머 5&prime; tail에 넣은 tailing PCR로 DNA 라이브러리 구축 단계를 줄였고, GroEL/GroES 과발현
-      균주에서 S30 extract를 직접 제작해 상용 키트의 배치 간 편차를 해소했으며, CalB 양성대조군에서
-      상용 키트로는 검출되지 않던 pNPO·pNPB·pNPP 활성을 확인했습니다.</li>
+      균주에서 S30 extract를 직접 제작해 상용 키트의 배치 간 편차를 해소했습니다. GFP 발현 비교에서
+      상용 키트 대비 약 2.5배의 수율을 얻었고, CalB 양성대조군에서는 상용 키트로 검출되지 않던
+      pNPO·pNPB·pNPP 활성을 확인했습니다.</li>
       <li>음향 액체 분주기(Echo 525)와 자동 분주 로봇을 이용한 96/384-well 공정으로 9개 라이브러리의
       후보 ORF 855종을 3종 pNP 기질에 대해 스크리닝했습니다. 임의 역치 대신 로버스트 Z-점수(Z &ge; 3)와
       양성대조군 이상의 활성을 동시에 요구하는 기준을 적용해 hit 후보 43종(5.0%)을 선별했고, 이 중
@@ -142,8 +144,9 @@ permalink: /cv-kr.html
       <li>이 실측 데이터를 라벨로 활성 예측 모델(ESM-C 인코더 동결, 풀링·투영 헤드만 학습)을 학습시키고
       있습니다. 활성이 검출되지 않은 ORF는 서열 유사도로 추정한 음성이 아니라 실험으로 확인된 음성이므로,
       거리 척도 자체를 학습 데이터로부터 갱신할 수 있습니다.</li>
-      <li>ESMFold로 후보의 예측 구조를 생성하고 Foldseek 구조 유사도 검색으로 서열 동일성이 낮은 hit의
-      원거리 상동성을 분석하고 있습니다.</li>
+      <li>ESMFold로 후보의 예측 구조를 생성하고, Foldseek 구조 유사도 검색으로 서열 동일성이 낮은 hit의
+      원거리 상동성을, FoldDisco로 서열상 떨어져 있으나 공간적으로 근접하는 촉매 모티프(Ser&ndash;His&ndash;Asp
+      삼주체, oxyanion hole)의 기하 구조를 분석하고 있습니다.</li>
       <li>랩노트를 전자화하고 연구실의 시약·바이오파운드리 장비·샘플 정보를 데이터베이스로 정리해,
       실험 기록을 데이터로 재사용할 수 있도록 표기를 통일했습니다.</li>
     </ul>
@@ -203,7 +206,7 @@ permalink: /cv-kr.html
   <dl class="skills">
     <dt>전산</dt>
     <dd>Python(PyTorch), R, Linux·GPU 서버 환경; 단백질 언어모델(ProtT5, ESM-C, ESM-2) 및 임베딩 DB 구축(HDF5);
-    ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek; UMAP, 대조학습; NGS·멀티오믹스 분석</dd>
+    ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek, FoldDisco; UMAP, 대조학습; NGS·멀티오믹스 분석</dd>
     <dt>실험</dt>
     <dd>무세포 단백질 합성 및 S30 extract 제작; 프라이머 설계, PCR, Gibson assembly, 형질전환;
     효소 활성 분석(pNP 기질), SDS-PAGE; 세포배양, ELISA, western blot, yeast two-hybrid</dd>
