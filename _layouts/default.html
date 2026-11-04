@@ -23,10 +23,22 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
+        {% if site.nav %}
+        <nav class="site-nav">
+          <ul>
+            {% for item in site.nav %}
+            <li{% if page.url == item.url %} class="current"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+        {% endif %}
+
         <p>
           <a href="mailto:{{ site.email }}">Email</a><br>
-          <a href="{{ site.cv }}">CV (English)</a><br>
-          <a href="{{ site.cv_kor }}">CV (Korean)</a><br>
+          {% if site.cv %}<a href="{{ site.cv | relative_url }}">CV (English)</a><br>{% endif %}
+          {% if site.cv_kor %}<a href="{{ site.cv_kor | relative_url }}">CV (Korean)</a><br>{% endif %}
+          {% if site.scholar %}<a href="{{ site.scholar }}">Google Scholar</a><br>{% endif %}
+          {% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a><br>{% endif %}
           <a href="{{ site.github.owner_url }}">GitHub</a>
         </p>
       

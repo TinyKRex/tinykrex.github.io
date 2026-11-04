@@ -1,137 +1,55 @@
 ---
-title: About Me
+title: About
 layout: default
 ---
 
-# About Me
-Hi, I'm a M.S student at KAIST, Graduate School of Engineering Biology advised by Professor Haseong Kim.
-My research focus is on bioinformatics and computational biology. Specifically, I am interested in computational methods to analyze and interpret large-scale biological data, with a focus on metagenomics and enzyme function prediction.
+# Yunkyeong Kang
 
-# Education
-- **Master of Science** Graduate School of Engineering Biology, KAIST *(Feb. 2025 -)*
-- **Bachelor of Science** Department of Biological Science, Sungkyunkwan University *(March. 2016 - Feb.)*
+I am an M.S. candidate at the **KAIST Graduate School of Engineering Biology**, advised by
+Prof. Haseong Kim, and a student researcher at the **Synthetic Biology and Bioengineering
+Research Center, KRIBB**.
 
-# Experience
-- **Feb. 2025 -** Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB
-- **- Feb.2025** Quality Assurance Staff (Quality System), Bio Plant, Hanmi Pharm
+I work on finding useful enzymes in places where sequence similarity cannot reach. My research
+couples **protein language model embeddings** with **cell-free protein synthesis on a
+biofoundry**, so that every round of experiments updates the model that chooses the next round
+of candidates — a Design–Build–Test–Learn loop that actually closes.
 
+Before graduate school I spent nearly two years in **quality assurance at a pharmaceutical
+biologics plant**, supporting regulatory inspections in English and investigating manufacturing
+deviations. That experience shapes how I work now: I care about whether a prediction survives
+contact with a real, variable, documented experiment.
 
-<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+**Currently open to 2027 opportunities** in AI-driven protein and enzyme engineering,
+bioinformatics, and bio R&D.
 
-[Link to another page](./another-page.html).
+---
 
-There should be whitespace between paragraphs.
+## Highlights
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+- Embedded **~6.9M metagenomic ORFs** into a vector database and recovered 976 lipase
+  candidates, including remote homologs that alignment-based screening misses.
+- Improved cell-free expression yield **~2.5×** over a commercial kit by producing S30 extract
+  in-house from a GroEL/GroES-overexpressing strain.
+- Screened **823 ORFs × 3 substrates** (~2,500 quantitative measurements) on an automated
+  384-well workflow; a robust Z-score criterion identified 43 hit candidates.
+- Co-author on a **KMB 2025** poster showing single-token protein embeddings improve essential
+  gene prediction by up to **17%**.
+- **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical — regulatory inspection
+  support, deviation investigation, change control.
 
-# Header 1
+## Education
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+- **M.S., Engineering Biology** — KAIST *(Feb. 2025 – Feb. 2027 expected)*
+  KAIST–KRIBB joint program · Advisor: Prof. Haseong Kim
+- **B.S., Biological Science** — Sungkyunkwan University *(Mar. 2016 – Feb. 2023)*
+  Magna Cum Laude, major GPA 4.31 / 4.5
 
-## Header 2
+## Experience
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+- **Feb. 2025 –** Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB
+- **Jun. 2023 – Feb. 2025** Quality Assurance (Biologics), Bio Plant, Hanmi Pharmaceutical
 
-### Header 3
+## Contact
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-``` -->
+[riveryk@kaist.ac.kr](mailto:riveryk@kaist.ac.kr) ·
+[GitHub](https://github.com/TinyKRex)
