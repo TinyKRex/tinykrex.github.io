@@ -12,15 +12,15 @@ Seongbo Heo, **Yunkyeong Kang**, Gyeongmin Park, Seung-Goo Lee, Dae-Hee Lee, Has
 Poster Q-12, 52nd Annual Meeting of the Korean Society for Microbiology and Biotechnology
 (KMB 2025), BEXCO, Busan, Korea — June 2025
 
-> Protein language models are typically read out by averaging across residue tokens. We show
-> that a single token's embedding can represent global information about the whole protein, and
-> that using it for bacterial essential-gene prediction improves performance by up to 17% over
+> Protein language models are usually read out by averaging across residue tokens. We show that
+> a single token's embedding can represent global information about the whole protein, and that
+> using it for bacterial essential-gene prediction improves performance by up to 17% over
 > average pooling.
 
 ## Theses
 
-**Iterative DBTL-Driven Discovery of Metagenomic Lipases by Coupling Protein Language Model
-Embeddings with Cell-Free High-Throughput Validation**
+**Improving the Efficiency of Metagenomic Enzyme Screening with an Embedding-Based Iterative
+Learning Strategy**
 M.S. thesis (in progress), KAIST Graduate School of Engineering Biology — expected Feb. 2027
 
 **Plant Breeding Techniques for Crop Improvement: Focusing on Genome Editing**

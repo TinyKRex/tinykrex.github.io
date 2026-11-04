@@ -5,76 +5,85 @@ layout: default
 
 # Research
 
-## Closing the DBTL loop in metagenomic enzyme discovery
+## Iterative embedding-based screening of metagenomic enzymes
 
 *M.S. thesis work, KAIST / KRIBB, 2025 – present*
 
-Environmental metagenomes hold an enormous reservoir of genes from species that cannot be
-cultured, but turning those sequences into confirmed function is still hard. Homology-based
-screening is fast and cheap, yet only returns sequences that already resemble known enzymes.
-Activity-based screening finds genuinely novel enzymes, but at a throughput and cost that
-limits how far you can look. Both share a deeper problem: the results of one round cannot feed
-back into how the next round picks candidates. The Design–Build–Test–Learn cycle never closes.
+Environmental metagenomes carry genes from microbes that cannot be cultured, which makes them a
+good source of new enzymes. Getting from those sequences to confirmed function is the hard part.
+Homology-based search is cheap but only returns sequences that already resemble known enzymes.
+Activity-based screening finds genuinely new ones but is limited by throughput and cost. Neither
+approach has a way of using the results of one round to improve how the next round selects
+candidates, so the Design–Build–Test–Learn cycle stays open.
 
-My thesis builds a platform where it does — **protein language model embeddings as the
-selection engine, cell-free protein synthesis and a biofoundry as the validation engine**.
+My thesis connects the two halves: protein language model embeddings select the candidates, and
+cell-free protein synthesis on a biofoundry measures what they actually do.
 
-### Design — selection in representation space, not alignment space
+### Design — selecting candidates in embedding space
 
-I embedded roughly **6.9 million ORFs** extracted from eight metagenome samples (forest soil,
-marine, plant rhizosphere, riparian soil) into a 1,024-dimensional vector database, mapped 97
-curated lipases/esterases into the same space, and used their mean vector as a centroid. Ranking
-every ORF by cosine similarity to that centroid — with UMAP used to inspect the cluster
-structure of the candidate set — yielded **976 candidates**, including distant sequences that
-homology search would never return.
+I extracted ORFs from 16 metagenome samples and generated ProtT5 embeddings for about
+**5.3 million** of them, stored as a 1,024-dimensional vector database. I then took 98 bacterial
+lipases with reported structures, mapped them into the same space, and used their mean embedding
+as a reference vector. Ranking the metagenomic ORFs by cosine similarity to that vector gives a
+candidate list that includes sequences too distant for homology search to return.
 
-### Build — making rounds comparable
+The assumption behind this is that a pretrained representation encodes catalytic function,
+structure and biochemical properties together, so functional proximity can show up as distance
+even when sequence identity is low. Whether that assumption holds is exactly what the screening
+step tests.
 
-Iteration only means something if every round runs under identical conditions, so the validation
-workflow came first.
+### Build — making the rounds comparable
 
-- **Tailing PCR** with T7 promoter and terminator built into the primer 5′ tails collapsed the
-  DNA library route from four steps (ORF PCR → purification → quantification → Gibson assembly →
-  linear PCR) to two. A gradient PCR (50–65 °C) resolved the 12 °C Tm gap between the forward
-  and reverse anchors.
-- **In-house S30 extract** from a GroEL/GroES-overexpressing strain removed the batch-to-batch
-  variation and chaperone shortfall of commercial kits: ~2.5× the yield by GFP comparison, and
-  pNPO/pNPB/pNPP activity in the CalB positive control that the commercial kit could not detect.
+Iteration is only meaningful if every round runs under the same conditions, so I standardized
+the validation workflow before running the screen.
+
+- **Library construction.** Building the linear expression cassettes by tailing PCR, with the T7
+  promoter and terminator carried in the primer 5′ tails, replaced a longer route that went
+  through purification, quantification and Gibson assembly. A gradient PCR resolved the Tm gap
+  between the forward and reverse anchors.
+- **Cell-free extract.** I prepared S30 extract in-house from a GroEL/GroES-overexpressing
+  strain. This removed the batch-to-batch variation of commercial kits and gave activity on
+  pNPO, pNPB and pNPP in the CalB positive control that the kit had not detected.
 - **Automation.** An Echo 525 acoustic dispenser and automated liquid handlers standardized the
-  96/384-well expression–dilution–assay process, with an sfGFP expression control on every plate
-  to monitor plate-to-plate variation.
+  96/384-well expression, dilution and assay steps, with an sfGFP expression control on every
+  plate so that plate-to-plate variation in cell-free expression could be monitored.
 
 ### Test — Round 1
 
-**823 ORFs** across nine library groups, expressed by CFPS and assayed against **three pNP
-substrates** at 405 nm: about **2,500 quantitative activity measurements**. Rather than an
-arbitrary threshold, I used a **robust Z-score** (median and MAD of the inactive ORF population
-on each plate) and required both Z ≥ 3 and a net absorbance above the plate's CalB positive
-control. That gave **43 hit candidates (5.2%)**, of which 7 were active on all three substrates
-and 3 on two. Confirmation by replicate measurement is in progress.
+I screened **855 candidate ORFs** from nine libraries, drawn from seven metagenomes, against
+three pNP substrates of different chain lengths, reading absorbance at 405 nm.
 
-### Learn — two ways the loop feeds back
+Instead of setting a threshold by hand, I used a robust Z-score computed from the background
+signal on each plate, and required both Z ≥ 3 and a net absorbance above that plate's CalB
+positive control. That gave **43 hit candidates (5.0%)**, of which **16 were active on two or
+more substrates**. Because this is a single-replicate screen, every hit is at this stage a
+statistical outlier; confirmation by replicate measurement is ongoing.
 
-1. **Center shifting.** Validated hits join the known-sequence set and shift the reference
-   centroid. The contrastive model I developed already maintains class centers by exponential
-   moving average, so this update happens inside the learning loop. Because embeddings implicitly
-   carry information about cell-free expressibility and activity at 37 °C, the reference point
-   converges toward the region that is both functionally similar to the target *and* verifiable
-   in this experimental system.
-2. **Learned metric.** Round 1's per-substrate activity data become supervised labels for a
-   lightweight model — a frozen ESM-C 600M encoder (1,152-d) with trainable attention pooling and
-   projection heads (~6M parameters). Critically, the **780 ORFs with no detected activity are
-   experimentally demonstrated negatives**, not negatives inferred from sequence distance, and
-   they define the negative pairs for metric learning. A fixed "cosine distance to a centroid"
-   is replaced by a distance learned from experiments.
+### Learn — feeding the results back
+
+The measured activities and hit calls are the training data for the next round, and they feed
+back in two ways.
+
+1. **Updating the reference vector.** Confirmed hits join the known-enzyme set, which moves the
+   reference vector toward the region that is both functionally close to the target and
+   expressible in this particular cell-free system.
+2. **Learning the metric.** The per-substrate measurements become labels for an activity
+   prediction model built on a frozen ESM-C encoder with trainable pooling and projection heads.
+   The ORFs with no detected activity matter as much as the hits here: they are experimentally
+   demonstrated negatives rather than negatives guessed from sequence distance, which is what
+   makes a learned distance metric possible at all.
+
+The quantity I care about across rounds is the hit rate among the top-ranked candidates. Round 1
+set that baseline at 5.0%, and whether iteration works is a question about whether that number
+moves.
 
 ### Interpreting hits structurally
 
-**ESMFold** generates predicted structures for the full candidate set without MSAs; **Foldseek**
-confirms whether low-identity hits nonetheless share the α/β-hydrolase fold; **FoldDisco** searches
-for the discontinuous catalytic motif geometry (Ser–His–Asp triad, oxyanion hole) that separates
-active candidates from inactive ones. This both audits what the model learned and supplies
-interpretable features for the next round.
+I generate predicted structures for the candidate set with ESMFold, which needs no MSA, and use
+Foldseek to check whether hits with low sequence identity nonetheless share the α/β-hydrolase
+fold. This is how remote homology recovered by embedding distance gets structural support, and
+it also supplies interpretable features — catalytic triad and oxyanion hole geometry — for the
+next round of selection.
 
 ---
 
@@ -82,10 +91,10 @@ interpretable features for the next round.
 
 *Collaborative work, presented at KMB 2025*
 
-Protein language models are usually read out by average pooling across residues. We found that
-**overlooked single-token embeddings** can carry global information about the whole protein, and
-applied this to bacterial essential-gene prediction, improving performance by up to **17%** over
-average pooling.
+Protein language models are usually read out by averaging over residue tokens. We found that
+single-token embeddings, which are normally discarded, can carry global information about the
+whole protein, and applied this to bacterial essential-gene prediction, where it improved
+performance by up to 17% over average pooling.
 
 ---
 
@@ -95,3 +104,5 @@ average pooling.
 - Closing the gap between computational prediction and wet-lab outcome
 - Cell-free systems and biofoundry automation as a fast, reproducible test bed
 - Enzyme discovery and engineering for industrial and environmental applications
+- How evidence generated by AI models can be documented and controlled well enough to stand up
+  in a regulated development process
