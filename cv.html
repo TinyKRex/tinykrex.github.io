@@ -65,7 +65,7 @@ permalink: /cv.html
 </style>
 </head>
 <body>
-<div class="back"><a href="./">&larr; back to site</a> &middot; print this page to save as PDF</div>
+<div class="back"><a href="./">&larr; back to site</a> &middot; <a href="./cv-kr.html">한국어 CV</a> &middot; print this page to save as PDF</div>
 <div class="page">
 
   <h1>Yunkyeong Kang</h1>
@@ -79,19 +79,21 @@ permalink: /cv.html
   </p>
 
   <h2>Profile</h2>
-  <p>Bioengineering researcher combining protein language models with cell-free, biofoundry-scale
-  experimental validation. Nearly two years of GMP quality assurance experience at a pharmaceutical
-  biologics plant — regulatory inspections, deviation investigation, change control — now applied to
-  AI-driven enzyme discovery. Works on both sides of the dry&ndash;wet divide: builds the embedding
-  pipelines and runs the assays that test them. Business-level English (OPIc IH) with
-  regulatory-inspection interpreting experience.</p>
+  <p>Bioengineering researcher working on two sides of the same industry. In research, I combine
+  protein language model embeddings with cell-free, biofoundry-scale experimental validation to find
+  new enzymes in metagenomes, and I build both the embedding pipelines and the assays that test them.
+  Before graduate school I spent 1 year 8 months in GMP quality assurance at a biologics plant,
+  supporting MFDS and FDA inspections as an English interpreter, investigating deviations and managing
+  change control. I am looking for positions in AI-driven bio R&amp;D as well as in quality and
+  regulatory affairs, including RA documentation and R&amp;D planning. Business-level English (OPIc IH)
+  with regulatory-inspection interpreting experience. Available from January 2027.</p>
 
   <h2>Education</h2>
   <div class="entry">
     <h3>M.S. in Engineering Biology &mdash; KAIST, Graduate School of Engineering Biology</h3>
     <p class="meta">Feb 2025 &ndash; Feb 2027 (expected) &middot; Advisor: Prof. Haseong Kim &middot; KAIST&ndash;KRIBB joint program</p>
-    <p>Thesis: <em>Iterative DBTL-Driven Discovery of Metagenomic Lipases by Coupling Protein Language
-    Model Embeddings with Cell-Free High-Throughput Validation</em></p>
+    <p>Thesis: <em>Improving the Efficiency of Metagenomic Enzyme Screening with an Embedding-Based
+    Iterative Learning Strategy</em></p>
   </div>
   <div class="entry">
     <h3>B.S. in Biological Science &mdash; Sungkyunkwan University</h3>
@@ -103,27 +105,29 @@ permalink: /cv.html
   <div class="entry">
     <h3>Graduate Researcher &mdash; Synthetic Biology and Bioengineering Research Center, KRIBB</h3>
     <p class="meta">Feb 2025 &ndash; present, Daejeon &middot; KAIST&ndash;KRIBB joint graduate program</p>
-    <p>Building a closed Design&ndash;Build&ndash;Test&ndash;Learn platform for enzyme discovery from
-    metagenomes, in which protein language model embeddings select candidates and cell-free protein
-    synthesis on a biofoundry validates them.</p>
+    <p>Building an iterative Design&ndash;Build&ndash;Test&ndash;Learn workflow for enzyme discovery
+    from metagenomes, in which protein language model embeddings select candidates and cell-free
+    protein synthesis on a biofoundry measures what they do.</p>
     <ul>
-      <li>Embedded ~6.9M ORFs from 8 environmental metagenomes into a 1,024-dimensional vector
-      database; ranked by cosine similarity to the centroid of 97 curated lipases/esterases,
-      recovering 976 candidates including remote homologs that alignment-based screening misses.</li>
-      <li>Redesigned the validation workflow: tailing PCR with T7 promoter/terminator in primer
-      5&prime; tails cut library construction from four steps to two; in-house S30 extract from a
-      GroEL/GroES-overexpressing strain gave ~2.5&times; the yield of a commercial kit and detected
-      pNPO/pNPB/pNPP activity the kit could not.</li>
-      <li>Standardized a 96/384-well expression&ndash;dilution&ndash;assay process on an Echo 525
-      acoustic dispenser and automated liquid handlers; screened 823 ORFs &times; 3 substrates for
-      ~2,500 quantitative measurements. A robust Z-score criterion (MAD-based, Z &ge; 3 plus
-      positive-control comparison) replaced ad-hoc thresholds, yielding 43 hit candidates (5.2%),
-      7 of them broad-specificity.</li>
-      <li>Training an activity predictor on Round 1 data (frozen ESM-C 600M encoder, ~6M trainable
-      parameters); the 780 experimentally confirmed negatives define negative pairs for metric
-      learning, so the selection criterion itself updates each round.</li>
-      <li>Structural interpretation with ESMFold at scale, Foldseek fold-similarity search, and
-      FoldDisco analysis of discontinuous catalytic motifs (Ser&ndash;His&ndash;Asp triad, oxyanion hole).</li>
+      <li>Generated ProtT5 embeddings for ~5.3M ORFs from 16 environmental metagenomes as a
+      1,024-dimensional vector database, and selected candidates by cosine similarity to the mean
+      embedding of 98 structurally characterized bacterial lipases, recovering sequences too distant
+      for homology search to return.</li>
+      <li>Standardized the validation workflow so that rounds are comparable: tailing PCR with T7
+      promoter/terminator in the primer 5&prime; tails shortened library construction; in-house S30
+      extract from a GroEL/GroES-overexpressing strain removed batch-to-batch variation and detected
+      pNPO/pNPB/pNPP activity in the CalB control that a commercial kit had not.</li>
+      <li>Screened 855 candidate ORFs from 9 libraries against 3 pNP substrates on a 96/384-well
+      automated workflow (Echo 525 acoustic dispenser, automated liquid handlers). A robust Z-score
+      criterion (Z &ge; 3 plus positive-control comparison) replaced ad-hoc thresholds and identified
+      43 hit candidates (5.0%), 16 of them active on two or more substrates.</li>
+      <li>Training an activity prediction model on the Round 1 measurements (frozen ESM-C encoder with
+      trainable pooling and projection heads); the ORFs with no detected activity serve as
+      experimentally demonstrated negatives, so the selection criterion itself is updated each round.</li>
+      <li>Structural interpretation of hits with ESMFold and Foldseek fold-similarity search,
+      including catalytic triad and oxyanion hole geometry.</li>
+      <li>Digitized the lab notebook and built a reagent, instrument and sample database so that
+      experimental records are consistent enough to be reused as data.</li>
     </ul>
   </div>
   <div class="entry">
@@ -144,10 +148,11 @@ permalink: /cv.html
     <h3>Quality Assurance, Biologics &mdash; Hanmi Pharmaceutical, Pyeongtaek Bio Plant</h3>
     <p class="meta">Jun 2023 &ndash; Feb 2025 (1 yr 8 mo), full-time</p>
     <ul>
-      <li>Supported regulatory agency inspections as English interpreter and scribe, including
-      supply-chain lines of questioning.</li>
-      <li>Investigated deviations and managed change control for biologics manufacturing.</li>
-      <li>Managed supplier and supply-chain quality documentation under GMP.</li>
+      <li>Supported MFDS and FDA inspections as English interpreter and scribe, including
+      supply-chain lines of questioning, and prepared the documentation requested by inspectors.</li>
+      <li>Investigated manufacturing deviations, identified root causes and managed the associated
+      change control.</li>
+      <li>Managed supplier qualification and supply-chain quality documentation under GMP.</li>
     </ul>
   </div>
 
@@ -168,7 +173,7 @@ permalink: /cv.html
     Mar &ndash; Oct 2026 &middot; team of 6, candidate selection and validation design</p>
     <p>Passed first-round review and was funded as a commissioned KRIBB project. Established the
     rationale from literature and database review, narrowed 14 enzyme&ndash;substrate reactions to 7
-    validated pairs through pre-screening controls, then screened 380 metagenomic candidates &times;
+    through pre-screening controls, then screened 380 metagenomic candidates &times;
     7 substrates &times; 4 conditions (~10,000 conditions) in three days.</p>
   </div>
   <div class="entry">
@@ -181,9 +186,8 @@ permalink: /cv.html
   <h2>Skills</h2>
   <dl class="skills">
     <dt>Computational</dt>
-    <dd>Python (PyTorch), R, Linux/GPU server workflows; protein language models (ESM-C, ESM-2) and
-    embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek,
-    FoldDisco; UMAP and contrastive representation learning; NGS/multi-omics analysis.</dd>
+    <dd>Python (PyTorch), R, Linux/GPU server workflows; protein language models (ProtT5, ESM-C, ESM-2) and
+    embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion, LigandMPNN; Foldseek; UMAP and contrastive representation learning; NGS/multi-omics analysis.</dd>
     <dt>Experimental</dt>
     <dd>Cell-free protein synthesis and S30 extract preparation; primer design, PCR, Gibson assembly,
     transformation; enzyme activity assays (pNP substrates), SDS-PAGE; cell culture, ELISA, western
@@ -192,8 +196,9 @@ permalink: /cv.html
     <dd>Echo 525 acoustic dispenser, Zephyr G3 liquid handler, Trobot II automated PCR, 5400 Fragment
     Analyzer, microplate readers (Victor Nivo, Tecan Spark).</dd>
     <dt>Quality &amp; regulatory</dt>
-    <dd>GMP, deviation investigation, change control, regulatory inspection support, supplier quality
-    management.</dd>
+    <dd>GMP; regulatory inspection support (MFDS, FDA); deviation investigation and root cause
+    analysis; change control; supplier and supply-chain quality management; technical documentation
+    in Korean and English.</dd>
     <dt>Languages</dt>
     <dd>Korean (native); English (OPIc IH 2026; elementary schooling in San Jose,
     California; regulatory inspection interpreting experience).</dd>

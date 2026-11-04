@@ -3,39 +3,51 @@ title: About
 layout: default
 ---
 
-# Yunkyeong Kang
+# About
 
 I am an M.S. candidate at the **KAIST Graduate School of Engineering Biology**, advised by
 Prof. Haseong Kim, and a student researcher at the **Synthetic Biology and Bioengineering
 Research Center, KRIBB**.
 
-I work on finding useful enzymes in places where sequence similarity cannot reach. My research
-couples **protein language model embeddings** with **cell-free protein synthesis on a
-biofoundry**, so that every round of experiments updates the model that chooses the next round
-of candidates — a Design–Build–Test–Learn loop that actually closes.
+My research looks for useful enzymes in metagenomes, where most of the sequences come from
+microbes nobody has cultured. I use protein language model embeddings to choose which candidates
+to test, and cell-free protein synthesis on a biofoundry to test them. The point of putting the
+two together is that each round of experiments produces labels that can correct how the next
+round picks candidates.
 
-Before graduate school I spent nearly two years in **quality assurance at a pharmaceutical
-biologics plant**, supporting regulatory inspections in English and investigating manufacturing
-deviations. That experience shapes how I work now: I care about whether a prediction survives
-contact with a real, variable, documented experiment.
+Before graduate school I worked for about two years in **quality assurance at a biologics
+plant**. I supported MFDS and FDA inspections as an English interpreter, investigated
+manufacturing deviations, and handled change control and supplier quality documentation under
+GMP. That is also where my research habits come from: I am more interested in whether a
+prediction holds up in a documented experiment than in how well it scores offline.
 
-**Currently open to 2027 opportunities** in AI-driven protein and enzyme engineering,
-bioinformatics, and bio R&D.
+So I work on two tracks, and I am looking for roles on either.
+
+**AI-driven bio R&D** — enzyme and protein engineering, bioinformatics, computational screening,
+and the biofoundry automation that validates it.
+
+**Quality and regulatory affairs** — QA, RA and regulatory writing (CTD and CMC documentation),
+R&D planning and project management. I have done this work full time in a GMP environment, and
+the computational side of my training is directly useful as regulators begin to ask how
+AI-derived evidence is generated and controlled.
+
+**Available from January 2027** (M.S. conferred February 2027).
 
 ---
 
 ## Highlights
 
-- Embedded **~6.9M metagenomic ORFs** into a vector database and recovered 976 lipase
-  candidates, including remote homologs that alignment-based screening misses.
-- Improved cell-free expression yield **~2.5×** over a commercial kit by producing S30 extract
-  in-house from a GroEL/GroES-overexpressing strain.
-- Screened **823 ORFs × 3 substrates** (~2,500 quantitative measurements) on an automated
-  384-well workflow; a robust Z-score criterion identified 43 hit candidates.
-- Co-author on a **KMB 2025** poster showing single-token protein embeddings improve essential
-  gene prediction by up to **17%**.
-- **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical — regulatory inspection
-  support, deviation investigation, change control.
+- Built a 1,024-dimensional embedding database of about **5.3 million metagenomic ORFs** and
+  selected candidates by distance to a reference vector rather than by sequence alignment.
+- Standardized cell-free expression and activity measurement for a biofoundry, then screened
+  **855 candidate ORFs** against three pNP substrates; a robust Z-score criterion identified
+  **43 hits**, 16 of them active on two or more substrates.
+- Co-author on a **KMB 2025** poster showing that single-token protein embeddings improve
+  bacterial essential-gene prediction by up to **17%** over average pooling.
+- **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical: regulatory inspection support,
+  deviation investigation, change control.
+- 640 hours of software engineering training before graduate school, including an award-winning
+  team project in the healthcare track.
 
 ## Education
 
@@ -52,4 +64,5 @@ bioinformatics, and bio R&D.
 ## Contact
 
 [riveryk@kaist.ac.kr](mailto:riveryk@kaist.ac.kr) ·
-[GitHub](https://github.com/TinyKRex)
+[GitHub](https://github.com/TinyKRex) ·
+[CV (English)](./cv.html) · [CV (한국어)](./cv-kr.html)

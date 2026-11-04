@@ -8,8 +8,12 @@ layout: default
 ## Graduate Researcher — Synthetic Biology and Bioengineering Research Center, KRIBB
 *Feb. 2025 – present · Daejeon, Korea · KAIST–KRIBB joint graduate program*
 
-Building a closed Design–Build–Test–Learn platform for enzyme discovery from metagenomes.
-Details on the [Research](./research.html) page.
+Building an iterative Design–Build–Test–Learn workflow for enzyme discovery from metagenomes,
+covering both the computational selection of candidates and the cell-free experiments that
+validate them. Details are on the [Research](./research.html) page.
+
+Alongside the research I digitized the lab notebook and built a database of reagents, biofoundry
+instruments and samples, so that experimental records are consistent enough to be reused as data.
 
 **Funded projects contributed to**
 
@@ -25,20 +29,27 @@ Details on the [Research](./research.html) page.
 ## Quality Assurance, Biologics — Hanmi Pharmaceutical, Pyeongtaek Bio Plant
 *Jun. 2023 – Feb. 2025 (1 yr 8 mo) · full-time*
 
-- Supported **regulatory agency inspections** as English interpreter and scribe, including
-  supply-chain lines of questioning.
-- Investigated **deviations** and managed **change control** for biologics manufacturing.
-- Managed supplier and supply-chain quality documentation under GMP.
+Worked in the biologics quality assurance group at a commercial GMP plant producing
+pre-filled-syringe biologics, with three main areas of responsibility.
 
-Left to pursue graduate research in computational enzyme engineering — the questions that were
-hardest to answer on the plant floor were the ones I wanted to study.
+- **Regulatory inspections.** Supported MFDS and FDA inspections as English interpreter and
+  scribe, including supply-chain questioning, and prepared the documentation that inspectors
+  asked for. Preparing for an inspection mostly meant tracing a product's development history
+  through the records and checking that each document agreed with the others.
+- **Deviations and change control.** Investigated manufacturing deviations, identified root
+  causes and managed the associated change control.
+- **Supplier and supply-chain quality.** Managed supplier qualification and supply-chain quality
+  documentation under GMP.
+
+I left to study computational enzyme engineering in graduate school. The questions that were
+hardest to answer on the plant floor were the ones I wanted to work on.
 
 ## Undergraduate Researcher — Research Center for Plant Plasticity, Seoul National University
 *Dec. 2021 – Feb. 2022 · Plant Biochemistry Lab*
 
 Studied temperature-dependent protein changes in *Arabidopsis*; yeast two-hybrid, insert
-cloning, restriction digestion. Wrote a lab-specific experimental protocol that is still used
-as training material.
+cloning, restriction digestion. Wrote a lab-specific experimental protocol that is still used as
+training material.
 
 ## Undergraduate Researcher — Infection and Inflammatory Disease Lab, Sungkyunkwan University
 *Sep. 2021 – Dec. 2021*
@@ -66,22 +77,23 @@ Thesis: *Plant Breeding Techniques for Crop Improvement: Focusing on Genome Edit
 # Skills
 
 **Computational** — Python (PyTorch), R, Linux and GPU server workflows; protein language models
-(ESM-C, ESM-2) and embedding database construction (HDF5); ESMFold, AlphaFold3, RFdiffusion,
-LigandMPNN; Foldseek, FoldDisco; UMAP, contrastive representation learning; NGS and multi-omics
-analysis.
+(ProtT5, ESM-C, ESM-2) and embedding database construction (HDF5); ESMFold, AlphaFold3,
+RFdiffusion, LigandMPNN; Foldseek; UMAP, contrastive representation learning; NGS and
+multi-omics analysis.
 
 **Experimental** — Cell-free protein synthesis and S30 extract preparation; primer design, PCR,
-Gibson assembly, transformation; enzyme activity assays (pNP substrates), SDS-PAGE; cell culture,
-ELISA, western blot, yeast two-hybrid.
+Gibson assembly, transformation; enzyme activity assays (pNP substrates), SDS-PAGE; cell
+culture, ELISA, western blot, yeast two-hybrid.
 
-**Automation and instruments** — Echo 525 acoustic dispenser, Zephyr G3 liquid handler,
-Trobot II automated PCR, 5400 Fragment Analyzer, microplate readers (Victor Nivo, Tecan Spark).
+**Automation and instruments** — Echo 525 acoustic dispenser, Zephyr G3 liquid handler, Trobot
+II automated PCR, 5400 Fragment Analyzer, microplate readers (Victor Nivo, Tecan Spark).
 
-**Quality and regulatory** — GMP, deviation investigation, change control, regulatory inspection
-support, supplier quality management.
+**Quality and regulatory** — GMP; regulatory inspection support (MFDS, FDA); deviation
+investigation and root cause analysis; change control; supplier and supply-chain quality
+management; technical documentation in Korean and English.
 
-**Languages** — Korean (native); English (OPIc IH, 2026; elementary schooling in
-San Jose, California; regulatory inspection interpreting experience).
+**Languages** — Korean (native); English (OPIc IH, 2026; elementary schooling in San Jose,
+California; regulatory inspection interpreting experience).
 
 ---
 

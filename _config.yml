@@ -2,14 +2,17 @@ title: Yunkyeong Kang
 logo: /assets/img/KAIST_startup_cropped.jpeg
 description: >
   <strong style="font-size:1.1em;">Bioengineering Researcher</strong><br>
-  <span style="color:gray;">M.S. student @KAIST &middot; @KRIBB</span>
+  <span style="color:gray;">M.S. student @KAIST &middot; @KRIBB</span><br>
+  <span style="color:gray; font-size:0.9em;">AI-driven bio R&amp;D &middot; Quality &amp; Regulatory</span>
 # Used by jekyll-seo-tag for search results and link previews (not shown in the sidebar)
-tagline: Protein language models meets cell-free enzyme screening.
+tagline: Protein language model embeddings and cell-free enzyme screening, with a background in GMP quality assurance.
 author: Yunkyeong Kang
 lang: en-US
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag
 
 # Sidebar navigation
 nav:
@@ -26,9 +29,9 @@ nav:
 
 # Sidebar links. Leave a value blank to hide that link.
 # cv points at the printable page /cv.html (print to PDF from the browser).
-# cv_kor is blank because assets/cv/ is empty — add the PDF, then restore the URL.
+# cv_kor points at the Korean printable page /cv-kr.html.
 cv: /cv.html
-cv_kor:
+cv_kor: /cv-kr.html
 scholar:   # Google Scholar profile URL
 linkedin:  # LinkedIn profile URL — recommended for non-Korean recruiters
 email: riveryk@kaist.ac.kr
