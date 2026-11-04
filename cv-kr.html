@@ -56,6 +56,17 @@ permalink: /cv-kr.html
   th { color: var(--muted); font-weight: 600; }
   .skills dt { font-weight: 700; margin-top: 8px; }
   .skills dd { margin: 2px 0 0; }
+  .head { display: flex; gap: 28px; align-items: flex-start; justify-content: space-between; }
+  .head-text { flex: 1; min-width: 0; }
+  .photo {
+    width: 108px;
+    flex: 0 0 108px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+  }
+  @media (max-width: 520px) {
+    .head { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
+  }
   .back { max-width: 760px; margin: 0 auto 12px; font-size: 13px; }
   .back a { color: var(--accent); text-decoration: none; }
   @media print {
@@ -71,16 +82,21 @@ permalink: /cv-kr.html
 <div class="back"><a href="./">&larr; 사이트로 돌아가기</a> &middot; <a href="./cv.html">English CV</a> &middot; 브라우저에서 인쇄하면 PDF로 저장됩니다</div>
 <div class="page">
 
-  <h1>강윤경</h1>
-  <p class="title">KAIST 공학생물학대학원 석사과정 (2027년 2월 졸업예정)</p>
-  <p class="title">한국생명공학연구원(KRIBB) 합성생물학연구센터 학생연구원</p>
-  <p class="contact">
-    대전광역시 &middot;
-    <a href="mailto:riveryk@kaist.ac.kr">riveryk@kaist.ac.kr</a> &middot;
-    <a href="https://tinykrex.github.io">tinykrex.github.io</a> &middot;
-    <a href="https://github.com/TinyKRex">github.com/TinyKRex</a> &middot;
-    <a href="https://www.linkedin.com/in/yunkyeong-kang-91b010409/">LinkedIn</a>
-  </p>
+  <div class="head">
+    <div class="head-text">
+      <h1>강윤경</h1>
+      <p class="title">KAIST 공학생물학대학원 석사과정 (2027년 2월 졸업예정)</p>
+      <p class="title">한국생명공학연구원(KRIBB) 합성생물학연구센터 학생연구원</p>
+      <p class="contact">
+        대전광역시 &middot;
+        <a href="mailto:riveryk@kaist.ac.kr">riveryk@kaist.ac.kr</a> &middot;
+        <a href="https://tinykrex.github.io">tinykrex.github.io</a> &middot;
+        <a href="https://github.com/TinyKRex">github.com/TinyKRex</a> &middot;
+        <a href="https://www.linkedin.com/in/yunkyeong-kang-91b010409/">LinkedIn</a>
+      </p>
+    </div>
+    <img class="photo" src="/assets/img/profile-id.jpg" alt="강윤경 증명사진">
+  </div>
 
   <h2>소개</h2>
   <p>단백질 언어모델과 무세포 단백질 합성·바이오파운드리 자동화를 연결해 메타게놈에서 신규 효소를
