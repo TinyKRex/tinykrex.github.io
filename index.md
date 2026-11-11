@@ -3,38 +3,19 @@ title: About
 layout: default
 ---
 
-# About
+# A model picks the enzyme. I run the experiment that can prove it wrong.
 
-**Bioengineering researcher closing the Design–Build–Test–Learn loop for enzyme discovery, with
-GMP quality assurance experience from a commercial biologics plant.**
+**5.3 million sequences → 855 tested → 43 that work.** Then the results rewrite how the next
+round picks. I build both halves of that loop: the embeddings that choose candidates, and the
+cell-free assays on a biofoundry that measure them.
 
-I am an M.S. candidate at the **KAIST Graduate School of Engineering Biology**, advised by
-Prof. Haseong Kim, and a student researcher at the **Synthetic Biology and Bioengineering
-Research Center, KRIBB**.
+I learned to care about documented evidence somewhere less glamorous — two years of GMP quality
+assurance at a biologics plant, interpreting for MFDS and FDA inspectors.
 
-My research looks for useful enzymes in metagenomes, where most of the sequences come from
-microbes nobody has cultured. I use protein language model embeddings to choose which candidates
-to test, and cell-free protein synthesis on a biofoundry to test them. The point of putting the
-two together is that each round of experiments produces labels that can correct how the next
-round picks candidates.
-
-Before graduate school I worked for about two years in **quality assurance at a biologics
-plant**. I supported MFDS and FDA inspections as an English interpreter, investigated
-manufacturing deviations, and handled change control and supplier quality documentation under
-GMP. That is also where my research habits come from: I am more interested in whether a
-prediction holds up in a documented experiment than in how well it scores offline.
-
-So I work on two tracks, and I am looking for roles on either.
-
-**AI-driven bio R&D** — enzyme and protein engineering, bioinformatics, computational screening,
-and the biofoundry automation that validates it.
-
-**Quality and regulatory affairs** — QA, RA and regulatory writing (CTD and CMC documentation),
-R&D planning and project management. I have done this work full time in a GMP environment, and
-the computational side of my training is directly useful as regulators begin to ask how
-AI-derived evidence is generated and controlled.
-
-**Available from January 2027** (M.S. conferred February 2027).
+M.S. candidate at the **KAIST Graduate School of Engineering Biology** (advisor: Prof. Haseong
+Kim) and student researcher at **KRIBB**. Looking for roles in **AI-driven bio R&D** or in
+**quality and regulatory affairs** — the two tracks meet where regulators start asking how
+AI-derived evidence is generated and controlled. **Available from January 2027.**
 
 ---
 
