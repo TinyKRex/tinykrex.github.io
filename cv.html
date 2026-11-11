@@ -60,7 +60,7 @@ permalink: /cv.html
   @media print {
     /* Print/PDF only: the on-screen page keeps its original spacing. */
     @page { margin: 10mm 11mm; }
-    body { background: #fff; padding: 0; font-size: 8.1pt; line-height: 1.28; }
+    body { background: #fff; padding: 0; font-size: 7.7pt; line-height: 1.26; }
     .page { box-shadow: none; padding: 0; max-width: none; }
     .back { display: none; }
     h1 { font-size: 21px; }
@@ -181,31 +181,37 @@ permalink: /cv.html
     </ul>
   </div>
 
-  <h2>Publications &amp; Presentations</h2>
-  <div class="entry">
-    <p><strong>Global Representations in Overlooked Single-token Embeddings of Protein Language
-    Models.</strong> S. Heo, <strong>Y. Kang</strong>, G. Park, S.-G. Lee, D.-H. Lee, H. Kim.
-    Poster Q-12, 52nd Annual Meeting of the Korean Society for Microbiology and Biotechnology
-    (KMB 2025), Busan, Jun 2025.</p>
-    <p class="meta">Showed that a single-token embedding can represent whole-protein information,
-    improving bacterial essential-gene prediction by up to 17% over average pooling.</p>
-  </div>
-
   <h2>Selected Projects</h2>
   <div class="entry">
     <h3>MetaForge &mdash; Deep Learning-Based Discovery of Moonlighting Enzymes</h3>
-    <p class="meta">IDEA-B Synthetic Biology Competition (MSIT / Korea Synthetic Biology Council),
-    Mar &ndash; Oct 2026 &middot; team of 6, candidate selection and validation design</p>
-    <p>Passed first-round review and was funded as a commissioned KRIBB project. Established the
-    rationale from literature and database review, narrowed 14 enzyme&ndash;substrate reactions to 7
-    through pre-screening controls, then screened 380 metagenomic candidates &times;
-    7 substrates &times; 4 conditions (~10,000 conditions) in three days.</p>
+    <p class="meta">IDEA-B Synthetic Biology Competition, MSIT / Korea Synthetic Biology Council
+    &middot; Mar &ndash; Oct 2026 &middot; student team of 4 (with an advising researcher and professor)
+    &middot; my role: candidate selection and validation design</p>
+    <p><strong>Outcome.</strong> Passed first-round review and was funded as a commissioned research
+    project at KRIBB. Completed ~10,000 screening conditions &mdash; 380 metagenomic candidates
+    &times; 7 substrates &times; 4 reaction conditions &mdash; in three days, inside an eight-month
+    budget.</p>
+    <p><strong>How.</strong> Built the case for the premise first: a literature and database review
+    showed that multifunctional proteins are over-represented among proteins linked to drug side
+    effects, which is what makes the single-function assumption behind conventional enzyme discovery
+    worth attacking. Then cut the scope to fit the budget &mdash; 14 enzyme&ndash;substrate reactions
+    collected from BRENDA, UniProt and prior literature were reduced to 7 validated systems by
+    pre-screening controls that dropped every combination where the biosensor cross-detected the
+    substrate or lacked sensitivity. Discarding half the candidates early is what made the screen
+    finishable at all.</p>
   </div>
+
   <div class="entry">
-    <h3>MAKEAT &mdash; AI Diet-Tracking App</h3>
-    <p class="meta">K-Software Empowerment BootCamp (640 h), 2022&ndash;2023 &middot; Excellence Award, healthcare track</p>
-    <p>Team project; volunteered for the Android/Flutter development role in addition to database
-    management. Individual projects: oral medication image classifier, COVID-19 case data analysis.</p>
+    <h3>K-Software Empowerment BootCamp &mdash; 640 hours of software training</h3>
+    <p class="meta">SW Talent Development Program (IITP) at Sungkyunkwan University &middot;
+    Oct 2022 &ndash; Feb 2023 &middot; Excellence Award, healthcare track</p>
+    <p>A 640-hour intensive in data processing, artificial intelligence and backend development,
+    taken alongside a biology degree. Four individual AI/data projects, including an oral medication
+    image classifier and an analysis of COVID-19 case data.</p>
+    <p><strong>MAKEAT</strong>, the team project, is an app that logs meals by classifying photographs
+    of food; it won the award in the healthcare track. I managed the database and volunteered for the
+    Android/Flutter development role when no one else would take it, learning the stack during the
+    project. This is where the computational half of my current research started.</p>
   </div>
 
   <div class="entry">
@@ -215,6 +221,15 @@ permalink: /cv.html
     glossary, meeting minutes from recordings, a lab notebook assistant that expands a short plan
     into a templated record, and a job-posting digest that collects, filters and mails a daily report
     unattended in CI. Each is a Claude Code project with its own skills, commands and hooks.</p>
+  </div>
+
+  <h2>Publications &amp; Presentations</h2>
+  <div class="entry">
+    <p><strong>Global Representations in Overlooked Single-token Embeddings of Protein Language
+    Models.</strong> S. Heo, <strong>Y. Kang</strong>, G. Park, S.-G. Lee, D.-H. Lee, H. Kim.
+    Poster Q-12, 52nd Annual Meeting of the Korean Society for Microbiology and Biotechnology
+    (KMB 2025), Busan, Jun 2025. &mdash; Second of six authors; single-token embeddings improved
+    bacterial essential-gene prediction by up to 17% over average pooling.</p>
   </div>
   <h2>Differentiating Strengths</h2>
   <ul>
