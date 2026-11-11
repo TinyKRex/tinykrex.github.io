@@ -60,4 +60,5 @@ Kim), student researcher at **KRIBB**. **Available from January 2027.**
 
 [riveryk@g.skku.edu](mailto:riveryk@g.skku.edu) ·
 [GitHub](https://github.com/TinyKRex) ·
+[LinkedIn](https://www.linkedin.com/in/yunkyeong-kang-91b010409/) ·
 [CV (English)](./cv.html) · [CV (한국어)](./cv-kr.html)
