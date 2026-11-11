@@ -9,8 +9,9 @@ layout: default
 *IDEA-B Synthetic Biology Competition, MSIT / Korea Synthetic Biology Council · Mar. – Oct. 2026*
 *Student team of 4, with an advising researcher and professor · my role: candidate selection and validation design*
 
-We were selected as one of the **final 15 teams** in Korea's first national synthetic biology
-competition, and the project was funded as a commissioned research project at KRIBB.
+Korea's first national synthetic biology competition drew 104 teams from 37 institutions; ours was
+one of the **15 graduate-division teams** that reached the final, and the project was funded as a
+commissioned research project at KRIBB.
 
 The premise had to be justified first: a literature and database review showed that multifunctional
 proteins are heavily over-represented among proteins linked to drug side effects, which is what
