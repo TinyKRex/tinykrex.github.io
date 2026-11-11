@@ -3,24 +3,31 @@ title: About
 layout: default
 ---
 
-# A model picks the enzyme. I run the experiment that can prove it wrong.
+# An inspection believes the records, not the explanation.
 
-**5.3 million sequences → 855 tested → 43 that work.** Then the results rewrite how the next
-round picks. I build both halves of that loop: the embeddings that choose candidates, and the
-cell-free assays on a biofoundry that measure them.
+I spent **two years in GMP quality assurance** at a biologics plant, standing next to MFDS and
+FDA inspectors as the English interpreter, investigating deviations and managing change control.
+Preparing for an inspection meant tracing a product's history through its records and checking
+that every document agreed with the others.
 
-I learned to care about documented evidence somewhere less glamorous — two years of GMP quality
-assurance at a biologics plant, interpreting for MFDS and FDA inspectors.
+I went back to graduate school to work on the evidence itself. My research generates it at
+scale — **5.3 million sequences → 855 tested → 43 that work** — and I build both halves of that
+loop, the model that selects candidates and the cell-free assays that measure them. Regulators
+are now starting to ask how AI-derived evidence is produced and controlled; I have worked on
+both sides of that question.
 
-M.S. candidate at the **KAIST Graduate School of Engineering Biology** (advisor: Prof. Haseong
-Kim) and student researcher at **KRIBB**. Looking for roles in **AI-driven bio R&D** or in
-**quality and regulatory affairs** — the two tracks meet where regulators start asking how
-AI-derived evidence is generated and controlled. **Available from January 2027.**
+Looking for roles in **RA, QA and regulatory writing** (CTD and CMC documentation, R&D planning)
+or in **AI-driven bio R&D**. M.S. candidate at the **KAIST Graduate School of Engineering
+Biology** (advisor: Prof. Haseong Kim), student researcher at **KRIBB**.
+**Available from January 2027.**
 
 ---
 
 ## Highlights
 
+- Supported **MFDS and FDA inspections** as English interpreter and scribe, and ran deviation
+  investigation and change control, through **1 yr 8 mo** of GMP quality assurance at Hanmi
+  Pharmaceutical's biologics plant.
 - Recovered **43 active enzymes from 855 screened candidates**, 16 of them active on two or more
   substrates, by selecting candidates in embedding space instead of by sequence alignment and
   calling hits with a robust Z-score criterion.
@@ -32,8 +39,6 @@ AI-derived evidence is generated and controlled. **Available from January 2027.*
   primer tails.
 - Improved bacterial essential-gene prediction by up to **17%** over average pooling, as
   co-author on a **KMB 2025** poster on single-token protein embeddings.
-- Supported **MFDS and FDA inspections** as English interpreter and ran deviation investigation
-  and change control through **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical.
 - Cut the repetitive parts of my own research and job search out of the day by building
   **LLM agents** for paper translation and summary, meeting minutes, and a daily job-posting
   digest that runs itself on a schedule.
