@@ -8,7 +8,7 @@ layout: default
 *Bioengineering researcher with GMP quality assurance experience — looking for roles in RA, QA
 and regulatory writing, or in AI-driven bio R&D.*
 
-For **two years in quality assurance** at a biologics plant, that meant deviations: finding the
+For **1 year 8 months in quality assurance** at a biologics plant, that meant deviations: finding the
 root cause of what went wrong and carrying it through change control. At MFDS and FDA inspections
 I took the English record and answered the supply-chain lines of questioning, and preparing for one
 meant tracing a product's history through its records until every document agreed with the others.

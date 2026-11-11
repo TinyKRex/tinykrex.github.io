@@ -9,20 +9,19 @@ layout: default
 *IDEA-B Synthetic Biology Competition, MSIT / Korea Synthetic Biology Council · Mar. – Oct. 2026*
 *Student team of 4, with an advising researcher and professor · my role: candidate selection and validation design*
 
-Our team passed the first round of review, and the project was funded as a commissioned research
-project at KRIBB.
+We were selected as one of the **final 15 teams** in Korea's first national synthetic biology
+competition, and the project was funded as a commissioned research project at KRIBB.
 
-The first thing we had to do was justify the premise. A literature and database review showed
-that multifunctional proteins are heavily over-represented among proteins linked to drug side
-effects, which is what made the single-function assumption behind conventional enzyme discovery
-worth attacking.
+The premise had to be justified first: a literature and database review showed that multifunctional
+proteins are heavily over-represented among proteins linked to drug side effects, which is what
+made the single-function assumption behind conventional enzyme discovery worth attacking.
 
-The second was fitting the work into an eight-month budget. We collected 14 enzyme–substrate
-reactions from BRENDA, UniProt and prior literature, then ran control experiments to drop the
-combinations where the biosensor cross-detected the substrate itself or lacked sensitivity. That
-removed half of the initial candidates, but the remaining **7 reaction systems** let us screen
-**380 metagenomic candidates against 7 substrates under 4 reaction conditions, roughly 10,000
-conditions, in three days**. Deciding what to discard early was what made the schedule possible.
+Then the work had to fit an eight-month budget. We collected 14 enzyme–substrate reactions from
+BRENDA, UniProt and prior literature, then ran control experiments to drop every combination where
+the biosensor cross-detected the substrate itself or lacked sensitivity. That removed half of the
+initial candidates, but the remaining **7 reaction systems** let us screen **380 metagenomic
+candidates against 7 substrates under 4 reaction conditions, roughly 10,000 conditions, in three
+days**. Deciding what to discard early was what made the schedule possible.
 
 ## MAKEAT — AI Diet-Tracking App
 *K-Software Empowerment BootCamp (640 h), Sungkyunkwan University · 2022 – 2023*
