@@ -7,7 +7,7 @@ layout: default
 
 ## MetaForge — Deep Learning-Based Discovery of Moonlighting Enzymes
 *IDEA-B Synthetic Biology Competition, MSIT / Korea Synthetic Biology Council · Mar. – Oct. 2026*
-*Team of 6 · my role: candidate selection and validation design*
+*Student team of 4, with an advising researcher and professor · my role: candidate selection and validation design*
 
 Our team passed the first round of review, and the project was funded as a commissioned research
 project at KRIBB.
