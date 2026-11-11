@@ -32,14 +32,16 @@ instruments and samples, so that experimental records are consistent enough to b
 Worked in the biologics quality assurance group at a commercial GMP plant producing
 pre-filled-syringe biologics, with three main areas of responsibility.
 
-- **Regulatory inspections.** Supported MFDS and FDA inspections as English interpreter and
-  scribe, including supply-chain questioning, and prepared the documentation that inspectors
-  asked for. Preparing for an inspection mostly meant tracing a product's development history
-  through the records and checking that each document agreed with the others.
+- **Regulatory inspections.** Took the record at MFDS and FDA inspections as the English scribe,
+  translating the inspectors' questions and the answers into the Korean record in real time, and
+  prepared the documentation they asked for. I also handled the supply-chain lines of
+  questioning — preparing the supporting evidence beforehand and answering during the audit.
+  Preparing for an inspection mostly meant tracing a product's development history through the
+  records and checking that each document agreed with the others.
 - **Deviations and change control.** Investigated manufacturing deviations, identified root
   causes and managed the associated change control.
 - **Supplier and supply-chain quality.** Managed supplier qualification and supply-chain quality
-  documentation under GMP.
+  documentation under GMP, and supported overseas partner audits and meetings as interpreter.
 
 I left to study computational enzyme engineering in graduate school. The questions that were
 hardest to answer on the plant floor were the ones I wanted to work on.

@@ -9,9 +9,9 @@ layout: default
 and regulatory writing, or in AI-driven bio R&D.*
 
 For **two years in quality assurance** at a biologics plant, that meant deviations: finding the
-root cause of what went wrong, carrying it through change control, and supporting MFDS and FDA
-inspections as the English interpreter — where preparing meant tracing a product's history
-through its records and checking that every document agreed with the others.
+root cause of what went wrong and carrying it through change control. At MFDS and FDA inspections
+I took the English record and answered the supply-chain lines of questioning, and preparing for one
+meant tracing a product's history through its records until every document agreed with the others.
 
 In **research** it is the same instinct pointed at the process. I cut a four-step library
 construction down to two, replaced a commercial kit with in-house extract at ~2.5× the yield,
@@ -26,9 +26,9 @@ Kim), student researcher at **KRIBB**. **Available from January 2027.**
 
 ## Highlights
 
-- Supported **MFDS and FDA inspections** as English interpreter and scribe, and ran deviation
-  investigation and change control, through **1 yr 8 mo** of GMP quality assurance at Hanmi
-  Pharmaceutical's biologics plant.
+- Took the English record at **MFDS and FDA inspections** and answered the **supply-chain lines of
+  questioning**, alongside deviation investigation, change control and supplier quality, through
+  **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical's biologics plant.
 - Recovered **43 active enzymes from 855 screened candidates**, 16 of them active on two or more
   substrates, by selecting candidates in embedding space instead of by sequence alignment and
   calling hits with a robust Z-score criterion.
