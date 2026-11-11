@@ -3,23 +3,24 @@ title: About
 layout: default
 ---
 
-# An inspection believes the records, not the explanation.
+# I track down errors and cut out wasted steps.
 
-I spent **two years in GMP quality assurance** at a biologics plant, standing next to MFDS and
-FDA inspectors as the English interpreter, investigating deviations and managing change control.
-Preparing for an inspection meant tracing a product's history through its records and checking
-that every document agreed with the others.
+*Bioengineering researcher with GMP quality assurance experience — looking for roles in RA, QA
+and regulatory writing, or in AI-driven bio R&D.*
 
-I went back to graduate school to work on the evidence itself. My research generates it at
-scale — **5.3 million sequences → 855 tested → 43 that work** — and I build both halves of that
-loop, the model that selects candidates and the cell-free assays that measure them. Regulators
-are now starting to ask how AI-derived evidence is produced and controlled; I have worked on
-both sides of that question.
+For **two years in quality assurance** at a biologics plant, that meant deviations: finding the
+root cause of what went wrong, carrying it through change control, and supporting MFDS and FDA
+inspections as the English interpreter — where preparing meant tracing a product's history
+through its records and checking that every document agreed with the others.
 
-Looking for roles in **RA, QA and regulatory writing** (CTD and CMC documentation, R&D planning)
-or in **AI-driven bio R&D**. M.S. candidate at the **KAIST Graduate School of Engineering
-Biology** (advisor: Prof. Haseong Kim), student researcher at **KRIBB**.
-**Available from January 2027.**
+In **research** it is the same instinct pointed at the process. I cut a four-step library
+construction down to two, replaced a commercial kit with in-house extract at ~2.5× the yield,
+and threw out hand-set thresholds for a criterion that can be stated and repeated — which is
+what made a screen of **5.3 million sequences → 855 tested → 43 that work** worth running at
+all. The repetitive parts that were left, I moved into agents that run the same way every time.
+
+M.S. candidate at the **KAIST Graduate School of Engineering Biology** (advisor: Prof. Haseong
+Kim), student researcher at **KRIBB**. **Available from January 2027.**
 
 ---
 
