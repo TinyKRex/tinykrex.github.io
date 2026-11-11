@@ -36,5 +36,6 @@ cv_kor: /cv-kr.html
 cv_pdf: /assets/cv/Yunkyeong_Kang_CV.pdf
 cv_kor_pdf: /assets/cv/강윤경_이력서.pdf
 scholar:   # Google Scholar profile URL
-linkedin: https://www.linkedin.com/in/yunkyeong-kang-91b010409/
+# linkedin: 프로필 정비 후 다시 넣는다 (2026-11-11 제외) — https://www.linkedin.com/in/yunkyeong-kang-91b010409/
+linkedin:
 email: riveryk@g.skku.edu
