@@ -53,23 +53,25 @@ permalink: /cv.html
   p { margin: 0 0 8px; }
   .skills dt { font-weight: 700; margin-top: 8px; }
   .skills dd { margin: 2px 0 0; }
+  .tagline { margin: 12px 0 0; font-weight: 700; line-height: 1.45; }
+  .interests { margin: 0; color: var(--muted); }
   .back { max-width: 760px; margin: 0 auto 12px; font-size: 13px; }
   .back a { color: var(--accent); text-decoration: none; }
   @media print {
     /* Print/PDF only: the on-screen page keeps its original spacing. */
-    @page { margin: 11mm 12mm; }
-    body { background: #fff; padding: 0; font-size: 8.8pt; line-height: 1.35; }
+    @page { margin: 10mm 11mm; }
+    body { background: #fff; padding: 0; font-size: 8.3pt; line-height: 1.3; }
     .page { box-shadow: none; padding: 0; max-width: none; }
     .back { display: none; }
     h1 { font-size: 21px; }
-    h2 { font-size: 11px; margin: 11px 0 6px; padding-bottom: 3px; }
+    h2 { font-size: 11px; margin: 8px 0 5px; padding-bottom: 3px; }
     h3 { font-size: 12.5px; }
     .meta, .contact { font-size: 9.5px; }
     .title { font-size: 11px; }
-    p { margin: 0 0 4px; }
-    li { margin-bottom: 2px; }
+    p { margin: 0 0 3px; }
+    li { margin-bottom: 1px; }
     ul { margin: 3px 0 0; }
-    .entry { margin-bottom: 9px; page-break-inside: avoid; }
+    .entry { margin-bottom: 6px; page-break-inside: avoid; }
     .skills dt { margin-top: 4px; }
   }
 </style>
@@ -89,6 +91,8 @@ permalink: /cv.html
     <a href="https://www.linkedin.com/in/yunkyeong-kang-91b010409/">LinkedIn</a>
   </p>
 
+  <p class="tagline">Closing the Design&ndash;Build&ndash;Test&ndash;Learn loop for enzyme discovery, with GMP
+  quality assurance experience from a commercial biologics plant.</p>
   <h2>Profile</h2>
   <p>Bioengineering researcher working on two sides of the same industry. In research, I combine
   protein language model embeddings with cell-free, biofoundry-scale experimental validation to find
@@ -99,6 +103,11 @@ permalink: /cv.html
   regulatory affairs, including RA documentation and R&amp;D planning. Business-level English (OPIc IH)
   with regulatory-inspection interpreting experience. Available from January 2027.</p>
 
+  <h2>Research Interests</h2>
+  <p class="interests">Protein language model embeddings &middot; Metagenomic enzyme discovery &middot;
+  Cell-free protein synthesis and biofoundry automation &middot; Design&ndash;Build&ndash;Test&ndash;Learn
+  and active-learning loops &middot; Structure-based interpretation of function &middot; GMP quality
+  systems and regulated evidence</p>
   <h2>Education</h2>
   <div class="entry">
     <h3>M.S. in Engineering Biology &mdash; KAIST, Graduate School of Engineering Biology</h3>
@@ -120,22 +129,23 @@ permalink: /cv.html
     from metagenomes, in which protein language model embeddings select candidates and cell-free
     protein synthesis on a biofoundry measures what they do.</p>
     <ul>
-      <li>Generated ProtT5 embeddings for ~5.3M ORFs from 16 environmental metagenomes as a
-      1,024-dimensional vector database, and selected candidates by cosine similarity to the mean
-      embedding of 98 structurally characterized bacterial lipases, recovering sequences too distant
-      for homology search to return.</li>
-      <li>Standardized the validation workflow so that rounds are comparable: tailing PCR with T7
-      promoter/terminator in the primer 5&prime; tails shortened library construction; in-house S30
-      extract from a GroEL/GroES-overexpressing strain removed batch-to-batch variation, gave ~2.5&times;
-      the expression yield of a commercial kit by GFP comparison, and detected pNPO/pNPB/pNPP activity
-      in the CalB control that the kit had not.</li>
-      <li>Screened 855 candidate ORFs from 9 libraries against 3 pNP substrates on a 96/384-well
-      automated workflow (Echo 525 acoustic dispenser, automated liquid handlers). A robust Z-score
-      criterion (Z &ge; 3 plus positive-control comparison) replaced ad-hoc thresholds and identified
-      43 hit candidates (5.0%), 16 of them active on two or more substrates.</li>
-      <li>Training an activity prediction model on the Round 1 measurements (frozen ESM-C encoder with
-      trainable pooling and projection heads); the ORFs with no detected activity serve as
-      experimentally demonstrated negatives, so the selection criterion itself is updated each round.</li>
+      <li>Narrowed ~5.3M ORFs from 16 environmental metagenomes to a tractable candidate set,
+      recovering sequences too distant for homology search to return, by generating ProtT5
+      embeddings as a 1,024-dimensional vector database and ranking by cosine similarity to the mean
+      embedding of 98 structurally characterized bacterial lipases.</li>
+      <li>Raised cell-free expression yield ~2.5&times; over a commercial kit by GFP comparison, and
+      detected pNPO/pNPB/pNPP activity in the CalB control that the kit had not, by preparing S30
+      extract in-house from a GroEL/GroES-overexpressing strain; shortened library construction by
+      carrying the T7 promoter/terminator in the primer 5&prime; tails, so that rounds run under
+      identical conditions.</li>
+      <li>Identified 43 hit candidates (5.0%), 16 of them active on two or more substrates, by
+      screening 855 candidate ORFs from 9 libraries against 3 pNP substrates on a 96/384-well
+      automated workflow (Echo 525 acoustic dispenser, automated liquid handlers) and replacing
+      ad-hoc thresholds with a robust Z-score criterion (Z &ge; 3 plus positive-control comparison).</li>
+      <li>Making the selection criterion itself update each round, by training an activity prediction
+      model on the Round 1 measurements (frozen ESM-C encoder with trainable pooling and projection
+      heads) in which the ORFs with no detected activity serve as experimentally demonstrated
+      negatives rather than negatives guessed from sequence distance.</li>
       <li>Structural interpretation of hits with ESMFold and Foldseek fold-similarity search, plus
       FoldDisco analysis of the discontinuous catalytic motif (Ser&ndash;His&ndash;Asp triad, oxyanion
       hole).</li>
@@ -160,6 +170,8 @@ permalink: /cv.html
   <div class="entry">
     <h3>Quality Assurance, Biologics &mdash; Hanmi Pharmaceutical, Pyeongtaek Bio Plant</h3>
     <p class="meta">Jun 2023 &ndash; Feb 2025 (1 yr 8 mo), full-time</p>
+    <p>Biologics quality assurance group at a commercial GMP plant producing pre-filled-syringe
+    biologics, covering regulatory inspections, deviations and change control, and supplier quality.</p>
     <ul>
       <li>Supported MFDS and FDA inspections as English interpreter and scribe, including
       supply-chain lines of questioning, and prepared the documentation requested by inspectors.</li>
@@ -196,6 +208,24 @@ permalink: /cv.html
     management. Individual projects: oral medication image classifier, COVID-19 case data analysis.</p>
   </div>
 
+  <div class="entry">
+    <h3>LLM agents for research and workflow automation</h3>
+    <p class="meta">Personal projects, 2025 &ndash; present &middot; repositories private, walkthrough available on request</p>
+    <p>Built agents for the repetitive parts of research: paper translation and summary with a fixed
+    glossary, meeting minutes from recordings, a lab notebook assistant that expands a short plan
+    into a templated record, and a job-posting digest that collects, filters and mails a daily report
+    unattended in CI. Each is a Claude Code project with its own skills, commands and hooks.</p>
+  </div>
+  <h2>Differentiating Strengths</h2>
+  <ul>
+    <li><strong>Dry&ndash;wet integration.</strong> I build the embedding pipelines and run the assays
+    that test them, so prediction and measurement are designed against each other rather than handed
+    over a wall.</li>
+    <li><strong>Industry quality experience.</strong> 1 yr 8 mo of GMP quality assurance, including
+    MFDS and FDA inspection support, applied to how research evidence is documented and controlled.</li>
+    <li><strong>Automation mindset.</strong> From biofoundry liquid handling to LLM agents, I move
+    repetitive work into systems that run the same way every time.</li>
+  </ul>
   <h2>Skills</h2>
   <dl class="skills">
     <dt>Computational</dt>

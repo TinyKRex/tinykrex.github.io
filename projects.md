@@ -35,13 +35,20 @@ learning the stack during the project.
 Individual projects in the same program: an oral medication image classifier, and an analysis of
 COVID-19 case data.
 
-## Tools I built for my own work
+## LLM agents for my own research workflow
+*Personal projects, 2025 – present · repositories private*
 
-A daily digest agent that collects and summarizes new papers in my field, and a lab notebook
-assistant that expands a short experimental plan into a full record using a fixed template. Both
-came out of the same problem: the parts of research that are repetitive are also the parts where
-inconsistency does the most damage.
+The parts of research that repeat are also the parts where inconsistency does the most damage, so
+I have been moving them into agents that run the same way every time.
 
-## Open source and code
+- **Paper agent.** Turns an English paper PDF into a Korean reading copy and a summary deck, using
+  a fixed glossary so that terms stay consistent across papers.
+- **Meeting minutes.** Converts a recording into structured minutes, which keeps a record of
+  decisions that would otherwise live in someone's notebook.
+- **Lab notebook assistant.** Expands a short experimental plan into a full record against a fixed
+  template — the same standardization problem as the screening workflow, one level up.
+- **Job-posting digest.** Collects postings from several sources on a daily schedule, filters them
+  against a written set of criteria, and mails a report. It runs unattended in CI.
 
-Research code and side projects live on [GitHub](https://github.com/TinyKRex).
+These repositories are private because they hold personal material, but I am happy to walk through
+the code and the agent design in an interview.

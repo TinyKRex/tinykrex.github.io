@@ -5,6 +5,9 @@ layout: default
 
 # About
 
+**Bioengineering researcher closing the Design–Build–Test–Learn loop for enzyme discovery, with
+GMP quality assurance experience from a commercial biologics plant.**
+
 I am an M.S. candidate at the **KAIST Graduate School of Engineering Biology**, advised by
 Prof. Haseong Kim, and a student researcher at the **Synthetic Biology and Bioengineering
 Research Center, KRIBB**.
@@ -37,17 +40,22 @@ AI-derived evidence is generated and controlled.
 
 ## Highlights
 
-- Built a 1,024-dimensional embedding database of about **5.3 million metagenomic ORFs** and
-  selected candidates by distance to a reference vector rather than by sequence alignment.
-- Standardized cell-free expression and activity measurement for a biofoundry, then screened
-  **855 candidate ORFs** against three pNP substrates; a robust Z-score criterion identified
-  **43 hits**, 16 of them active on two or more substrates.
-- Co-author on a **KMB 2025** poster showing that single-token protein embeddings improve
-  bacterial essential-gene prediction by up to **17%** over average pooling.
-- **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical: regulatory inspection support,
-  deviation investigation, change control.
-- 640 hours of software engineering training before graduate school, including an award-winning
-  team project in the healthcare track.
+- Recovered **43 active enzymes from 855 screened candidates**, 16 of them active on two or more
+  substrates, by selecting candidates in embedding space instead of by sequence alignment and
+  calling hits with a robust Z-score criterion.
+- Searched **5.3 million metagenomic ORFs** for candidates by building a 1,024-dimensional
+  ProtT5 embedding database and ranking by distance to a reference vector — a route that returns
+  sequences too distant for homology search to find.
+- Raised cell-free expression yield **~2.5×** over a commercial kit by preparing S30 extract
+  in-house, and shortened library construction by carrying the T7 promoter and terminator in
+  primer tails.
+- Improved bacterial essential-gene prediction by up to **17%** over average pooling, as
+  co-author on a **KMB 2025** poster on single-token protein embeddings.
+- Supported **MFDS and FDA inspections** as English interpreter and ran deviation investigation
+  and change control through **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical.
+- Cut the repetitive parts of my own research and job search out of the day by building
+  **LLM agents** for paper translation and summary, meeting minutes, and a daily job-posting
+  digest that runs itself on a schedule.
 
 ## Education
 

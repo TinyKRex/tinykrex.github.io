@@ -19,6 +19,48 @@ candidates, so the Design–Build–Test–Learn cycle stays open.
 My thesis connects the two halves: protein language model embeddings select the candidates, and
 cell-free protein synthesis on a biofoundry measures what they actually do.
 
+<figure style="margin:28px 0;">
+<svg viewBox="0 0 680 150" width="100%" role="img" aria-labelledby="dbtl-title dbtl-desc" style="max-width:680px;">
+  <title id="dbtl-title">The Design–Build–Test–Learn loop of this project</title>
+  <desc id="dbtl-desc">Design selects 855 candidates from 5.3 million ORFs by embedding distance.
+  Build standardizes cell-free expression. Test screens them on three substrates and finds 43
+  hits, 16 of them active on two or more substrates. Learn uses those measurements to update the
+  selection criterion, which feeds back into Design.</desc>
+  <g font-family="inherit" font-size="13">
+    <g fill="#f3f8fc" stroke="#267cb9" stroke-width="1.5">
+      <rect x="2"   y="26" width="150" height="56" rx="6"/>
+      <rect x="176" y="26" width="150" height="56" rx="6"/>
+      <rect x="350" y="26" width="150" height="56" rx="6"/>
+      <rect x="524" y="26" width="150" height="56" rx="6"/>
+    </g>
+    <g fill="#267cb9" font-weight="700" text-anchor="middle">
+      <text x="77"  y="48">Design</text>
+      <text x="251" y="48">Build</text>
+      <text x="425" y="48">Test</text>
+      <text x="599" y="48">Learn</text>
+    </g>
+    <g fill="#444" text-anchor="middle" font-size="11.5">
+      <text x="77"  y="65">5.3M ORFs</text><text x="77"  y="78">→ 855 candidates</text>
+      <text x="251" y="65">cell-free, one</text><text x="251" y="78">standard condition</text>
+      <text x="425" y="65">3 substrates</text><text x="425" y="78">→ 43 hits (16 multi)</text>
+      <text x="599" y="65">activity model</text><text x="599" y="78">updates the metric</text>
+    </g>
+    <g stroke="#267cb9" stroke-width="1.5" fill="none">
+      <path d="M152 54 h18" marker-end="url(#dbtl-arrow)"/>
+      <path d="M326 54 h18" marker-end="url(#dbtl-arrow)"/>
+      <path d="M500 54 h18" marker-end="url(#dbtl-arrow)"/>
+      <path d="M599 82 v26 H77 V88" marker-end="url(#dbtl-arrow)" stroke-dasharray="5 4"/>
+    </g>
+    <text x="338" y="126" fill="#5a5a5a" font-size="11.5" text-anchor="middle">each round's results rewrite how the next round selects</text>
+  </g>
+  <defs>
+    <marker id="dbtl-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#267cb9"/>
+    </marker>
+  </defs>
+</svg>
+</figure>
+
 ### Design — selecting candidates in embedding space
 
 I extracted ORFs from 16 metagenome samples and generated ProtT5 embeddings for about

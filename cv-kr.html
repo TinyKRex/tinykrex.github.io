@@ -67,21 +67,23 @@ permalink: /cv-kr.html
   @media (max-width: 520px) {
     .head { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
   }
+  .tagline { margin: 12px 0 0; font-weight: 700; line-height: 1.5; }
+  .interests { margin: 0; color: var(--muted); }
   .back { max-width: 760px; margin: 0 auto 12px; font-size: 13px; }
   .back a { color: var(--accent); text-decoration: none; }
   @media print {
     /* Print/PDF only: the on-screen page keeps its original spacing. */
-    @page { margin: 11mm 12mm; }
-    body { background: #fff; padding: 0; font-size: 8.2pt; line-height: 1.38; }
+    @page { margin: 10mm 11mm; }
+    body { background: #fff; padding: 0; font-size: 7.5pt; line-height: 1.28; }
     .page { box-shadow: none; padding: 0; max-width: none; }
     .back { display: none; }
     h1 { font-size: 21px; }
-    h2 { font-size: 11px; margin: 11px 0 6px; padding-bottom: 3px; }
+    h2 { font-size: 11px; margin: 8px 0 5px; padding-bottom: 3px; }
     h3 { font-size: 12.5px; }
     .meta, .contact { font-size: 9.5px; }
     .title { font-size: 11px; }
-    p { margin: 0 0 4px; }
-    li { margin-bottom: 2px; }
+    p { margin: 0 0 3px; }
+    li { margin-bottom: 1px; }
     ul { margin: 3px 0 0; }
     th, td { padding: 2px 6px; font-size: 9px; }
     .photo { width: 92px; flex-basis: 92px; }
@@ -110,6 +112,9 @@ permalink: /cv-kr.html
     <img class="photo" src="/assets/img/profile-id.jpg" alt="강윤경 증명사진">
   </div>
 
+  <p class="tagline">예측으로 효소 후보를 고르고, 무세포 실험으로 직접 검증해, 그 결과로 다음 예측을
+  고치는 연구를 합니다. GMP 바이오의약품 공장에서 QA로 일한 경험이 있습니다.</p>
+
   <h2>소개</h2>
   <p>단백질 언어모델과 무세포 단백질 합성·바이오파운드리 자동화를 연결해 메타게놈에서 신규 효소를
   발굴하는 연구를 하고 있습니다. 예측 모델을 만드는 일과 그 예측을 검증하는 실험을 모두 직접 수행합니다.
@@ -120,6 +125,10 @@ permalink: /cv-kr.html
   및 CTD·CMC 문서 작성, 연구기획·과제관리)입니다. GMP 현장에서 실제로 수행해 본 업무이며, AI로 생성한
   근거를 어떻게 문서화하고 관리할 것인지가 규제 영역의 과제로 떠오르는 지금 두 경험이 함께 쓰일 수 있다고
   봅니다. 입사 가능 시기는 2027년 1월입니다(학위 수여 2027년 2월).</p>
+
+  <h2>연구 관심 분야</h2>
+  <p class="interests">단백질 언어모델 임베딩 &middot; 메타게놈 효소 발굴 &middot; 무세포 단백질 합성과
+  바이오파운드리 자동화 &middot; DBTL·능동학습 루프 &middot; 구조 기반 기능 해석 &middot; GMP 품질 시스템</p>
 
   <h2>학력</h2>
   <div class="entry">
@@ -140,6 +149,8 @@ permalink: /cv-kr.html
   <div class="entry">
     <h3>한미약품 평택 바이오플랜트 &mdash; 바이오품질보증그룹 QA (프로)</h3>
     <p class="meta">2023.06 &ndash; 2025.02 (1년 8개월) &middot; 정규직</p>
+    <p>프리필드시린지 바이오의약품을 생산하는 GMP 공장의 바이오품질보증그룹에서 규제기관 실사 대응,
+    일탈 조사와 변경관리, 공급업체 품질관리를 담당했습니다.</p>
     <ul>
       <li>식약처·FDA 등 규제기관 실사에 영어 통역 및 서기로 참여하고, 공급망 관련 질의 대응과 요구 자료
       준비를 담당했습니다. 실사 준비는 제품의 개발 경위를 기록으로 따라가며 문서 간 내용이 서로
@@ -158,21 +169,23 @@ permalink: /cv-kr.html
     검증하며(Build·Test), 그 결과로 다음 라운드의 선정 기준을 갱신하는(Learn) 메타게놈 효소 스크리닝
     전략을 구축하고 있습니다.</p>
     <ul>
-      <li>16종 메타게놈 시료에서 추출한 약 530만 개 ORF의 ProtT5 임베딩으로 1,024차원 벡터 데이터베이스를
-      구축하고, 구조가 보고된 세균 유래 리파아제 98종의 평균 벡터와의 코사인 유사도로 후보를 선정했습니다.
-      서열 상동성 검색으로는 회수되지 않는 원거리 서열이 후보에 포함됩니다.</li>
-      <li>라운드 간 조건을 동일하게 맞추기 위해 검증 공정을 먼저 표준화했습니다. T7 promoter·terminator를
-      프라이머 5&prime; tail에 넣은 tailing PCR로 DNA 라이브러리 구축 단계를 줄였고, GroEL/GroES 과발현
-      균주에서 S30 extract를 직접 제작해 상용 키트의 배치 간 편차를 해소했습니다. GFP 발현 비교에서
-      상용 키트 대비 약 2.5배의 수율을 얻었고, CalB 양성대조군에서는 상용 키트로 검출되지 않던
-      pNPO·pNPB·pNPP 활성을 확인했습니다.</li>
-      <li>음향 액체 분주기(Echo 525)와 자동 분주 로봇을 이용한 96/384-well 공정으로 9개 라이브러리의
-      후보 ORF 855종을 3종 pNP 기질에 대해 스크리닝했습니다. 임의 역치 대신 로버스트 Z-점수(Z &ge; 3)와
-      양성대조군 이상의 활성을 동시에 요구하는 기준을 적용해 hit 후보 43종(5.0%)을 선별했고, 이 중
-      16종이 두 기질 이상에서 활성을 보였습니다.</li>
-      <li>이 실측 데이터를 라벨로 활성 예측 모델(ESM-C 인코더 동결, 풀링·투영 헤드만 학습)을 학습시키고
-      있습니다. 활성이 검출되지 않은 ORF는 서열 유사도로 추정한 음성이 아니라 실험으로 확인된 음성이므로,
-      거리 척도 자체를 학습 데이터로부터 갱신할 수 있습니다.</li>
+      <li><strong>약 530만 개 ORF에서 실험 가능한 규모로 후보를 좁혔습니다.</strong> 16종 메타게놈
+      시료의 ORF를 ProtT5로 임베딩해 1,024차원 벡터 데이터베이스를 구축하고, 구조가 보고된 세균 유래
+      리파아제 98종의 평균 벡터와의 코사인 유사도로 선정했습니다. 서열 상동성 검색으로는 회수되지 않는
+      원거리 서열이 후보에 포함됩니다.</li>
+      <li><strong>무세포 발현 수율을 상용 키트의 약 2.5배로 높였습니다.</strong> GroEL/GroES 과발현
+      균주에서 S30 extract를 직접 제작해 배치 간 편차를 해소했고, CalB 양성대조군에서 상용 키트로는
+      검출되지 않던 pNPO·pNPB·pNPP 활성을 확인했습니다. T7 promoter·terminator를 프라이머 5&prime;
+      tail에 넣은 tailing PCR로 DNA 라이브러리 구축 단계도 줄여, 라운드마다 같은 조건에서 실험할 수
+      있게 했습니다.</li>
+      <li><strong>후보 855종에서 hit 43종(5.0%)을 선별했고, 이 중 16종이 두 기질 이상에서 활성을
+      보였습니다.</strong> 음향 액체 분주기(Echo 525)와 자동 분주 로봇을 이용한 96/384-well 공정으로
+      9개 라이브러리를 3종 pNP 기질에 대해 스크리닝했고, 임의 역치 대신 로버스트 Z-점수(Z &ge; 3)와
+      양성대조군 이상의 활성을 동시에 요구하는 기준을 적용했습니다.</li>
+      <li><strong>후보 선정 기준 자체가 라운드마다 갱신되도록 만들고 있습니다.</strong> 이 실측 데이터를
+      라벨로 활성 예측 모델(ESM-C 인코더 동결, 풀링·투영 헤드만 학습)을 학습시키는 중입니다. 활성이
+      검출되지 않은 ORF는 서열 유사도로 추정한 음성이 아니라 실험으로 확인된 음성이므로, 거리 척도
+      자체를 학습 데이터로부터 갱신할 수 있습니다.</li>
       <li>ESMFold로 후보의 예측 구조를 생성하고, Foldseek 구조 유사도 검색으로 서열 동일성이 낮은 hit의
       원거리 상동성을, FoldDisco로 서열상 떨어져 있으나 공간적으로 근접하는 촉매 모티프(catalytic
       triad, oxyanion hole)의 기하 구조를 분석하고 있습니다.</li>
@@ -230,6 +243,24 @@ permalink: /cv-kr.html
     안드로이드 앱 개발(Flutter)을 자원해 프로젝트 기간에 배우며 완수했습니다. 같은 과정에서 경구약제
     사진 분류 모델, 코로나 확진 데이터 분석을 개인 프로젝트로 수행했습니다.</p>
   </div>
+
+  <div class="entry">
+    <h3>연구·업무 자동화 LLM 에이전트</h3>
+    <p class="meta">개인 프로젝트, 2025 &ndash; 현재 &middot; 저장소는 비공개(요청 시 시연 가능)</p>
+    <p>반복되는 일을 매번 같은 방식으로 처리하도록 에이전트로 옮겼습니다. 용어집을 고정한 논문 번역·요약,
+    녹음 파일에서 회의록 생성, 짧은 실험 계획을 정해진 양식의 기록으로 확장하는 랩노트 보조, 매일 여러
+    채용 사이트의 공고를 모아 기준에 따라 거른 뒤 메일로 보내는 공고 비서(CI에서 무인 실행)입니다.</p>
+  </div>
+
+  <h2>강점</h2>
+  <ul>
+    <li><strong>예측과 실험을 모두 수행합니다.</strong> 임베딩 파이프라인을 직접 만들고 그 후보를 직접
+    실험으로 검증하므로, 예측 모델과 검증 조건을 서로를 고려해 설계할 수 있습니다.</li>
+    <li><strong>GMP 현장 품질 경험이 있습니다.</strong> 1년 8개월간 식약처·FDA 실사 대응과 일탈·변경관리를
+    수행했고, 연구 결과를 기록하고 관리하는 방식에 그대로 적용하고 있습니다.</li>
+    <li><strong>반복 작업을 시스템으로 만듭니다.</strong> 바이오파운드리 자동화부터 LLM 에이전트까지,
+    사람이 매번 다르게 하던 일을 같은 방식으로 돌아가게 바꿔 왔습니다.</li>
+  </ul>
 
   <h2>보유 역량</h2>
   <dl class="skills">
