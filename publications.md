@@ -19,8 +19,7 @@ Poster Q-12, 52nd Annual Meeting of the Korean Society for Microbiology and Biot
 
 ## Theses
 
-**Improving the Efficiency of Metagenomic Enzyme Screening with an Embedding-Based Iterative
-Learning Strategy**
+**Enhancing Metagenomic Enzyme Screening Efficiency through Embedding-based Iterative Learning Strategy**
 M.S. thesis (in progress), KAIST Graduate School of Engineering Biology — expected Feb. 2027
 
 **Plant Breeding Techniques for Crop Improvement: Focusing on Genome Editing**
