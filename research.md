@@ -8,6 +8,7 @@ layout: default
 ## Iterative embedding-based screening of metagenomic enzymes
 
 *M.S. thesis work, KAIST / KRIBB, 2025 – present*
+*Code and write-up: [masters-research](https://github.com/TinyKRex/masters-research) · [DOI](https://doi.org/10.5281/zenodo.24149119)*
 
 Environmental metagenomes carry genes from microbes that cannot be cultured, which makes them a
 good source of new enzymes. Getting from those sequences to confirmed function is the hard part.

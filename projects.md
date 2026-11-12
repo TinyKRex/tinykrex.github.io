@@ -52,3 +52,14 @@ I have been moving them into agents that run the same way every time.
 
 These repositories are private because they hold personal material, but I am happy to walk through
 the code and the agent design in an interview.
+
+## Code and documentation
+
+My master's research — the metagenomic enzyme screening work, the enzyme classification
+groundwork, the moonlighting-protein project and the biofoundry infrastructure — is written up
+with its core code at
+**[masters-research](https://github.com/TinyKRex/masters-research)**, archived at
+[doi.org/10.5281/zenodo.24149119](https://doi.org/10.5281/zenodo.24149119).
+
+Each project has a plain-language summary of what it was for and whether it worked, including
+where the result is weaker than I would like.
