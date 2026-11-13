@@ -8,10 +8,12 @@ layout: default
 *Bioengineering researcher with GMP quality assurance experience — looking for roles in RA, QA
 and regulatory writing, or in AI-driven bio R&D.*
 
-For **1 year 8 months in quality assurance** at a biologics plant, that meant deviations: finding the
-root cause of what went wrong and carrying it through change control. At MFDS and FDA inspections
-I took the English record and answered the supply-chain lines of questioning, and preparing for one
-meant tracing a product's history through its records until every document agreed with the others.
+For **1 year 8 months in quality systems** at a biologics plant, my main job was supplier
+management, alongside change control, deviation investigation and CAPA: finding the root cause of
+what went wrong and carrying the fix through. At FDA and overseas client audits I took the English
+record and answered the supply-risk lines of questioning (at MFDS inspections, the supply-risk
+questions only), and preparing for an audit meant tracing a product's history through its records
+until every document agreed with the others.
 
 In **research** it is the same instinct pointed at the process. I cut a four-step library
 construction down to two, replaced a commercial kit with in-house extract at ~2.5× the yield,
@@ -26,9 +28,10 @@ Kim), student researcher at **KRIBB**. **Available from January 2027.**
 
 ## Highlights
 
-- Took the English record at **MFDS and FDA inspections** and answered the **supply-chain lines of
-  questioning**, alongside deviation investigation, change control and supplier quality, through
-  **1 yr 8 mo** of GMP quality assurance at Hanmi Pharmaceutical's biologics plant.
+- Ran **supplier management** as the main role in the quality systems (QS) part of GMP quality
+  assurance at Hanmi Pharmaceutical's biologics plant (**1 yr 8 mo**), with change control,
+  deviation investigation and CAPA; took the English record at **FDA and overseas client audits**
+  and answered the **supply-risk lines of questioning** there and at MFDS inspections.
 - Recovered **43 active enzymes from 855 screened candidates**, 16 of them active on two or more
   substrates, by selecting candidates in embedding space instead of by sequence alignment and
   calling hits with a robust Z-score criterion.
@@ -54,7 +57,7 @@ Kim), student researcher at **KRIBB**. **Available from January 2027.**
 ## Experience
 
 - **Feb. 2025 –** Graduate Researcher, Synthetic Biology and Bioengineering Research Center, KRIBB
-- **Jun. 2023 – Feb. 2025** Quality Assurance (Biologics), Bio Plant, Hanmi Pharmaceutical
+- **Jun. 2023 – Feb. 2025** Quality Assurance – Quality Systems (Biologics), Bio Plant, Hanmi Pharmaceutical
 
 ## Contact
 

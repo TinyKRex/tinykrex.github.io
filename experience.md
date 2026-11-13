@@ -26,22 +26,25 @@ instruments and samples, so that experimental records are consistent enough to b
 | Korea–North America biofoundry joint research center | MSIT | 2025.02 – 2026.12 |
 | KAIST–KRIBB Synbio School (first-mover talent program) | MSIT | 2025.07 – 2027.02 |
 
-## Quality Assurance, Biologics — Hanmi Pharmaceutical, Pyeongtaek Bio Plant
+## Quality Assurance (Quality Systems), Biologics — Hanmi Pharmaceutical, Pyeongtaek Bio Plant
 *Jun. 2023 – Feb. 2025 (1 yr 8 mo) · full-time*
 
-Worked in the biologics quality assurance group at a commercial GMP plant producing
-pre-filled-syringe biologics, with three main areas of responsibility.
+Worked in the quality systems (QS) part of the biologics quality assurance group at a commercial
+GMP plant producing pre-filled-syringe biologics. Supplier management was my main role; audit
+response, change control, deviation investigation and CAPA were secondary duties.
 
-- **Regulatory inspections.** Took the record at MFDS and FDA inspections as the English scribe,
-  translating the inspectors' questions and the answers into the Korean record in real time, and
-  prepared the documentation they asked for. I also handled the supply-chain lines of
-  questioning — preparing the supporting evidence beforehand and answering during the audit.
-  Preparing for an inspection mostly meant tracing a product's development history through the
-  records and checking that each document agreed with the others.
-- **Deviations and change control.** Investigated manufacturing deviations, identified root
-  causes and managed the associated change control.
-- **Supplier and supply-chain quality.** Managed supplier qualification and supply-chain quality
-  documentation under GMP, and supported overseas partner audits and meetings as interpreter.
+- **Supplier management (main role).** Managed supplier qualification and supply-chain quality
+  documentation under GMP.
+- **Audit response.** At FDA inspections and overseas client audits, took the record as the
+  English scribe — translating the auditors' questions and the answers into the Korean record in
+  real time — and handled the supply-risk lines of questioning. At MFDS inspections, handled the
+  supply-risk lines of questioning. For both, I prepared the supporting evidence beforehand and
+  answered during the audit; preparing mostly meant tracing a product's development history
+  through the records and checking that each document agreed with the others.
+- **Change control, deviations and CAPA.** Managed change control, investigated deviations to
+  their root cause and wrote the corrective and preventive actions (CAPA).
+- **Training.** Completed the ISO 14001 (environmental management systems) and ISO 19011
+  (management system auditing) course, Apr. 2024.
 
 I left to study computational enzyme engineering in graduate school. The questions that were
 hardest to answer on the plant floor were the ones I wanted to work on.
@@ -90,12 +93,14 @@ culture, ELISA, western blot, yeast two-hybrid.
 **Automation and instruments** — Echo 525 acoustic dispenser, Zephyr G3 liquid handler, Trobot
 II automated PCR, 5400 Fragment Analyzer, microplate readers (Victor Nivo, Tecan Spark).
 
-**Quality and regulatory** — GMP; regulatory inspection support (MFDS, FDA); deviation
-investigation and root cause analysis; change control; supplier and supply-chain quality
-management; technical documentation in Korean and English.
+**Quality and regulatory** — GMP; supplier and supply-chain quality management; audit response
+(FDA and overseas client audits as English scribe; MFDS inspections); change control; deviation
+investigation and root cause analysis; CAPA; ISO 14001 and ISO 19011 course
+completed (2024); technical documentation
+in Korean and English.
 
 **Languages** — Korean (native); English (OPIc IH, 2026; TOEIC 960, 2021 — certificate expired;
-elementary schooling in San Jose, California; regulatory inspection interpreting experience).
+elementary schooling in San Jose, California; English scribe at FDA and overseas client audits).
 
 ---
 
