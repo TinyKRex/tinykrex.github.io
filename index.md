@@ -8,12 +8,10 @@ layout: default
 *Bioengineering researcher with GMP quality assurance experience — looking for roles in RA, QA
 and regulatory writing, or in AI-driven bio R&D.*
 
-For **1 year 8 months in quality systems** at a biologics plant, my main job was supplier
-management, alongside change control, deviation investigation and CAPA: finding the root cause of
-what went wrong and carrying the fix through. At FDA and overseas client audits I took the English
-record and answered the supply-risk lines of questioning (at MFDS inspections, the supply-risk
-questions only), and preparing for an audit meant tracing a product's history through its records
-until every document agreed with the others.
+For **1 year 8 months in QA (Quality Systems)** at a biologics plant, my main job was supplier
+management, alongside change control, deviation investigation and CAPA — finding the root cause of
+what went wrong and carrying the fix through. At **FDA and overseas client audits** I served as the
+English scribe and answered the supply-risk questions.
 
 In **research** it is the same instinct pointed at the process. I cut a four-step library
 construction down to two, replaced a commercial kit with in-house extract at ~2.5× the yield,
@@ -28,10 +26,9 @@ Kim), student researcher at **KRIBB**. **Available from January 2027.**
 
 ## Highlights
 
-- Ran **supplier management** as the main role in the quality systems (QS) part of GMP quality
-  assurance at Hanmi Pharmaceutical's biologics plant (**1 yr 8 mo**), with change control,
-  deviation investigation and CAPA; took the English record at **FDA and overseas client audits**
-  and answered the **supply-risk lines of questioning** there and at MFDS inspections.
+- **GMP QA (Quality Systems), 1 yr 8 mo** at Hanmi Pharmaceutical's biologics plant: supplier
+  management as the main role, plus change control, deviation investigation and CAPA.
+- **English scribe at FDA and overseas client audits**, also answering the supply-risk questions.
 - Recovered **43 active enzymes from 855 screened candidates**, 16 of them active on two or more
   substrates, by selecting candidates in embedding space instead of by sequence alignment and
   calling hits with a robust Z-score criterion.
