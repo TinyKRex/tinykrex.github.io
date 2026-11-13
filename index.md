@@ -5,8 +5,8 @@ layout: default
 
 # I track down errors and cut out wasted steps.
 
-*Bioengineering researcher with GMP quality assurance experience — looking for roles in RA, QA
-and regulatory writing, or in AI-driven bio R&D.*
+*Bioengineering researcher with GMP quality assurance experience — looking for QA and RA roles
+in pharma and biotech, or in AI-driven bio R&D.*
 
 For **1 year 8 months in QA (Quality Systems)** at a biologics plant, my main job was supplier
 management, alongside change control, deviation investigation and CAPA — finding the root cause of
